@@ -38,6 +38,10 @@ public class Laser : MonoBehaviour
     public Button shoot;
     public bool toggle = false;
 
+    public Sprite toggleOn;
+    public Sprite toggleOff;
+    public Image toggleImage;
+
     public GameObject CrossHairPrefab;
     public HiveBehaviour hive;
 
@@ -69,7 +73,7 @@ public class Laser : MonoBehaviour
             crossHairs[crossHairs.Count - 1].transform.SetParent(transform);
             crossHairs[crossHairs.Count - 1].SetActive(false);
         }
-
+        toggleImage.sprite = toggleOff;
     }
 
     public void ToggleShoot()
@@ -77,10 +81,12 @@ public class Laser : MonoBehaviour
         toggle = !toggle;
         if (toggle)
         {
+            toggleImage.sprite = toggleOn;
             ToggleCrossOn();
         }
         else
         {
+            toggleImage.sprite = toggleOff;
             ToggleCrossOff();
         }
     }

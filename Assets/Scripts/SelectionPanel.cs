@@ -21,14 +21,14 @@ public class SelectionPanel : MonoBehaviour
     
     public void Start()
     {
-        names = new List<string>();
+        
     }
 
 
     // Start is called before the first frame update
     public void SetList(List<string> nameList)
     {
-        
+        names = new List<string>();
         foreach (var name in nameList)
         {
             Debug.Log(name);
@@ -42,10 +42,10 @@ public class SelectionPanel : MonoBehaviour
 
     void Plus()
     {
-        if (UpdateSmth != null) UpdateSmth();
         ++indx;
         CheckLimits();
         UpdateText();
+        if (UpdateSmth != null) UpdateSmth();
     }
 
     void UpdateText()
@@ -67,9 +67,10 @@ public class SelectionPanel : MonoBehaviour
 
     void Minus()
     {
-        if (UpdateSmth != null) UpdateSmth();
+        
         --indx;
         CheckLimits();
         UpdateText();
+        if (UpdateSmth != null) UpdateSmth();
     }
 }

@@ -38,7 +38,10 @@ public class FoodDispenser : MonoBehaviour
 
         PanelController panel = transform.GetComponent<PanelController>();
         panel.UpdateMe += UpdateMe;
-
+        foreach(string name in foodColors.GetNames())
+        {
+            Debug.Log(name);
+        }
         colorSelection.SetList(foodColors.GetNames());
         shapeSelection.SetList(foodShapes.GetNames());
         spiceSelection.SetList(foodSpices.GetNames());
@@ -63,6 +66,7 @@ public class FoodDispenser : MonoBehaviour
 
     void UpdateDisplay()
     {
+        Debug.Log(foodColors.foodColors[colorSelection.indx].name+ "," +foodShapes.foodShapes[shapeSelection.indx].name + "," + foodSpices.foodSpices[spiceSelection.indx].name);
         shapeImage.color = foodColors.foodColors[colorSelection.indx].color;
         shapeImage.sprite = foodShapes.foodShapes[shapeSelection.indx].image;
         spiceImage.sprite = foodSpices.foodSpices[spiceSelection.indx].image;
