@@ -51,6 +51,7 @@ public class CreatureEgg : BaseCreature
         newCreature.transform.SetParent(hive.transform);
 
         //Play sound here?
+        hive.RemoveCreatureFromHive(this);
         Destroy(this.gameObject);
     }
 }

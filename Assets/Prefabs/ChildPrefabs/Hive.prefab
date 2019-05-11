@@ -96,6 +96,10 @@ MonoBehaviour:
   creatures: []
   colliderBounds: {fileID: 0}
   roamRadius: 10
+  eggLayRadius: 40
+  eggLayingTimeMin: 10
+  eggLayingTimeMax: 20
+  eggHatchTime: 15
 --- !u!61 &621560322
 BoxCollider2D:
   m_ObjectHideFlags: 0
