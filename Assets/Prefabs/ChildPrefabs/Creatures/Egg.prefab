@@ -87,3 +87,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1e9069e20d0c414c8edf860566d2e3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soldierPrefab: {fileID: 730529203332863725, guid: 0555c1244bd9e8a48bbf4a05e52cfc86,
+    type: 3}
+  workerPrefab: {fileID: 7792914135407182283, guid: 8872aacf2c678944b901de4b6e637b02,
+    type: 3}
+  queenPrefab: {fileID: 5618545908145130588, guid: 4cb3de3ec080ecc4e94835bc8dbb8512,
+    type: 3}
