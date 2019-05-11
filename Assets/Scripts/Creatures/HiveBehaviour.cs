@@ -9,7 +9,7 @@ public class HiveBehaviour : MonoBehaviour
     public BoxCollider2D colliderBounds;
 
     public float roamRadius = 30f;
-    public float eggLayRadius = 40f;
+    public float eggLayRadius = 80f;
     public int eggLayingTimeMin = 230; //in seconds
     public int eggLayingTimeMax = 360; //in seconds
     public float eggHatchTime = 40; //in seconds
