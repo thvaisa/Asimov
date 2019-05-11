@@ -55,12 +55,11 @@ public class BaseCreature : MonoBehaviour
         );
     }
 
-    public virtual void HitByLaser (GameObject laserExplosion)
+    public virtual void HitByLaser (GameObject explosion)
     {
         Die();
 
-        GameObject explosion = Instantiate(laserExplosion);
-        explosion.transform.SetParent(transform);
+        explosion.transform.SetParent(hive.transform);
         explosion.transform.position = transform.position;
 
         Destroy(gameObject);
