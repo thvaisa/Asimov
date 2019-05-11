@@ -11,7 +11,12 @@ public class SelectionPanel : MonoBehaviour
     public Button minusButton;
 
     public int indx = 0;
-    
+
+
+    //I'm so sorry
+    public delegate void UpdateSomething();
+    public UpdateSomething UpdateSmth;
+
     List<string> names;
     
     public void Start()
@@ -23,8 +28,10 @@ public class SelectionPanel : MonoBehaviour
     // Start is called before the first frame update
     public void SetList(List<string> nameList)
     {
+        
         foreach (var name in nameList)
         {
+            Debug.Log(name);
             names.Add(name);
         }
         plusButton.onClick.AddListener(Plus);
@@ -35,7 +42,7 @@ public class SelectionPanel : MonoBehaviour
 
     void Plus()
     {
-      
+        if (UpdateSmth != null) UpdateSmth();
         ++indx;
         CheckLimits();
         UpdateText();
@@ -60,6 +67,7 @@ public class SelectionPanel : MonoBehaviour
 
     void Minus()
     {
+        if (UpdateSmth != null) UpdateSmth();
         --indx;
         CheckLimits();
         UpdateText();

@@ -27,6 +27,10 @@ public class FoodDispenser : MonoBehaviour
     public string expectShape;
     public string expectSpice;
 
+    public Image shapeImage;
+    public Image spiceImage;
+
+
     void Start()
     {
 
@@ -36,8 +40,12 @@ public class FoodDispenser : MonoBehaviour
         colorSelection.SetList(foodColors.GetNames());
         shapeSelection.SetList(foodShapes.GetNames());
         spiceSelection.SetList(foodSpices.GetNames());
-
+        colorSelection.UpdateSmth = UpdateDisplay;
+        shapeSelection.UpdateSmth = UpdateDisplay;
+        spiceSelection.UpdateSmth = UpdateDisplay;
         dispenser.onClick.AddListener(DispensePress);
+        this.panel = panel.panel;
+        UpdateDisplay();
     }
 
     public void DispensePress()
@@ -52,7 +60,9 @@ public class FoodDispenser : MonoBehaviour
 
     void UpdateDisplay()
     {
-
+        shapeImage.color = foodColors.foodColors[colorSelection.indx].color;
+        shapeImage.sprite = foodShapes.foodShapes[shapeSelection.indx].image;
+        spiceImage.sprite = foodSpices.foodSpices[spiceSelection.indx].image;
     }
 
 

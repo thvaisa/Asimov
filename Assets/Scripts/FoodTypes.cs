@@ -13,13 +13,13 @@ public class FoodColor
 [System.Serializable]
 public class FoodShape
 {
-    public Image image;
+    public Sprite image;
     public string name;
 }
 
 [System.Serializable]
 public class FoodSpice
 {
-    public Image image;
+    public Sprite image;
     public string name;
 }
