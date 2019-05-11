@@ -1,0 +1,1370 @@
+fileFormatVersion: 2
+guid: 2d8952c88a7fa6347a3c5a0ce4437f4f
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: egg_Queen_Sheet_0
+    21300002: egg_Queen_Sheet_1
+    21300004: egg_Queen_Sheet_2
+    21300006: egg_Queen_Sheet_3
+    21300008: egg_Queen_Sheet_4
+    21300010: egg_Queen_Sheet_5
+    21300012: egg_Queen_Sheet_6
+    21300014: egg_Queen_Sheet_7
+    21300016: egg_Queen_Sheet_8
+    21300018: egg_Queen_Sheet_9
+    21300020: egg_Queen_Sheet_10
+    21300022: egg_Queen_Sheet_11
+    21300024: egg_Queen_Sheet_12
+    21300026: egg_Queen_Sheet_13
+    21300028: egg_Queen_Sheet_14
+    21300030: egg_Queen_Sheet_15
+    21300032: egg_Queen_Sheet_16
+    21300034: egg_Queen_Sheet_17
+    21300036: egg_Queen_Sheet_18
+    21300038: egg_Queen_Sheet_19
+    21300040: egg_Queen_Sheet_20
+    21300042: egg_Queen_Sheet_21
+    21300044: egg_Queen_Sheet_22
+    21300046: egg_Queen_Sheet_23
+    21300048: egg_Queen_Sheet_24
+    21300050: egg_Queen_Sheet_25
+    21300052: egg_Queen_Sheet_26
+    21300054: egg_Queen_Sheet_27
+    21300056: egg_Queen_Sheet_28
+    21300058: egg_Queen_Sheet_29
+    21300060: egg_Queen_Sheet_30
+    21300062: egg_Queen_Sheet_31
+    21300064: egg_Queen_Sheet_32
+    21300066: egg_Queen_Sheet_33
+    21300068: egg_Queen_Sheet_34
+    21300070: egg_Queen_Sheet_35
+    21300072: egg_Queen_Sheet_36
+    21300074: egg_Queen_Sheet_37
+    21300076: egg_Queen_Sheet_38
+    21300078: egg_Queen_Sheet_39
+    21300080: egg_Queen_Sheet_40
+    21300082: egg_Queen_Sheet_41
+    21300084: egg_Queen_Sheet_42
+    21300086: egg_Queen_Sheet_43
+    21300088: egg_Queen_Sheet_44
+    21300090: egg_Queen_Sheet_45
+    21300092: egg_Queen_Sheet_46
+    21300094: egg_Queen_Sheet_47
+    21300096: egg_Queen_Sheet_48
+    21300098: egg_Queen_Sheet_49
+    21300100: egg_Queen_Sheet_50
+    21300102: egg_Queen_Sheet_51
+    21300104: egg_Queen_Sheet_52
+    21300106: egg_Queen_Sheet_53
+    21300108: egg_Queen_Sheet_54
+    21300110: egg_Queen_Sheet_55
+    21300112: egg_Queen_Sheet_56
+    21300114: egg_Queen_Sheet_57
+    21300116: egg_Queen_Sheet_58
+    21300118: egg_Queen_Sheet_59
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 2813
+        width: 176
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611e084d53051ce419bc71a0cf7ab0cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 2813
+        width: 176
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754a59158a182224f8d2821538d1e183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 2813
+        width: 176
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec11cefb06ccc247a3cc014ff9c07af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 2813
+        width: 176
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166ab173c1b236a49bf1dfcc1b8a7691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 2813
+        width: 177
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8c3b809e1172345a8cc320fa7a41c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2388
+        y: 2813
+        width: 178
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97eb4292eceb60499435681494f541e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2839
+        y: 2813
+        width: 176
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad716051af5e9b458b2a1e4b4df4c1e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 3288
+        y: 2813
+        width: 178
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5edb2fc49fe644984c980331544971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 3737
+        y: 2813
+        width: 178
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58e35e70dfa4424dadce8f1f95838fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 2362
+        width: 176
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343843a8706d2ce49bb073a5fedb58f3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 2362
+        width: 172
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a882195969b9fec47a24bc1978d1670d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 2362
+        width: 176
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c05e01331839243b990e031b9eb884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 2362
+        width: 176
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2febc9a3ef7ba2341afb81928a76fb6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 2362
+        width: 176
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f43bedf8ff103488463ae0fb9c4a89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2396
+        y: 2362
+        width: 173
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff3bba9d09d2b1e4fa6c29e807e0d541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 2841
+        y: 2362
+        width: 176
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c366bb6d51d784d92d75425cc72801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 3288
+        y: 2362
+        width: 178
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2a1bc66a8729240bac8a3a3d03ec53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 3742
+        y: 2362
+        width: 175
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9a8501504eb43479f00016596697c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1911
+        width: 174
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d3c16c95544d945a31c80f38fb42e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1913
+        width: 174
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5719072ab39dba14c918731ba7e72a0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 1913
+        width: 178
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ae012f9eeda95439af503d510bc908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 1913
+        width: 175
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06d09a96a27fdf41a01008e7a5a9d99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1945
+        y: 1911
+        width: 174
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ec827134c431e48a56e7fa6a826463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 1913
+        width: 174
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9054c31ac9b15914f8304e66facf122e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 2841
+        y: 1913
+        width: 176
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e564e0045080554ab2fd51e5475f509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 3292
+        y: 1913
+        width: 176
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88184c142274cb543a038713abcfedfc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 3742
+        y: 1913
+        width: 175
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1896cb19cbba6d24fb0d626e8796be8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 1462
+        width: 176
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d293a3e442cd93f488d9dc0f69d9f566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1462
+        width: 174
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dafce7a57826ac45a6a988af8d2eb05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 1462
+        width: 176
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51bbaa7ad139465409bd2c3cc3e721cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 1462
+        width: 174
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e972648456106a04ba674b7b7f3fc628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 1462
+        width: 176
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0044d8cd2ccb72e429a580d9f97b5bac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 1462
+        width: 178
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4bed8ea71dfa1e4ab0acd3342e2e404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 2841
+        y: 1462
+        width: 178
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ec6de23f419734daf5836619b619ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 3290
+        y: 1462
+        width: 179
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5abda098a33cf0c4a9ccdaf9283e96c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 1462
+        width: 178
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4746baf4ccc967741b57a6e2e99ac0e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1013
+        width: 180
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc021fbd355f8346bd22ed87b51d1f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 1013
+        width: 182
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55caffec42ec4124ba213fa2207ebf6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 1013
+        width: 182
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a322e968eea874fb42fff91f85b8df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 1013
+        width: 182
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff3e817b736b4c4c8b7471d8829e2ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 1937
+        y: 1013
+        width: 184
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b5135873e00474fb35b50ccd245e7f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 2388
+        y: 1013
+        width: 184
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55ebbbd36ee19245b90f11a4487b713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 2837
+        y: 1012
+        width: 186
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd730a7180ebd24b81502e166a51656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 3286
+        y: 1012
+        width: 186
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adab906d0f766a340aadc14dfd818f98
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 3737
+        y: 1012
+        width: 185
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024275e8f7da7c24e9eb8ee256958a00
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 563
+        width: 188
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7139fb6a974add34dbefc6e4cfb7500d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 563
+        width: 188
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f619bd4a97929634b9a7ddf25906dcf2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 563
+        width: 190
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631dd77ffd8ac7e43a143ba7d112b73a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 563
+        width: 190
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25d9000acfd3fc48a2ba56edd9953d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 563
+        width: 190
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5a7725a803364438d86edf30fbc85f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 2382
+        y: 561
+        width: 192
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5a97bdf03559d4f91d7ca2e5a3aea1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 2831
+        y: 561
+        width: 192
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49626156fbf8177408539bdf17812898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 3278
+        y: 559
+        width: 197
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4b7ad3c9da13547bd7955258d2a0a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 3727
+        y: 559
+        width: 197
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0bc579ada2ec0478e02fc327fe6a8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 108
+        width: 197
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57327557db7cf104a89df4dfb0ff0e9e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 108
+        width: 196
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03ab57ffcc308c459c46ac1ca9536ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 108
+        width: 198
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de5a32a5b450684c928a584930f6974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 108
+        width: 196
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b86ff2c24348ce47a1c7f649ad8d6d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 108
+        width: 198
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c12295301ccc88438dc19e850574fcf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_Queen_Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 2378
+        y: 108
+        width: 196
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0379b6914082cd74c84f716c33b1f6a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f90c3b30ec595884a8bd63c538c1e750
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
