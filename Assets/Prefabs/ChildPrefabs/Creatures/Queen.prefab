@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5618545908145130591}
   - component: {fileID: 5618545908145130590}
   - component: {fileID: 95213483682066879}
+  - component: {fileID: 3760807143416287792}
   m_Layer: 5
   m_Name: Queen
   m_TagString: Untagged
@@ -66,7 +67,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: fafd3370cb76c67468f644b25a3a2fa0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 121f747864f08564b916af8d9412878d, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -89,3 +90,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EggPrefab: {fileID: 7527020666977018450, guid: 8a0366abf2376b64ebc8cf2e8318bd01,
     type: 3}
+--- !u!95 &3760807143416287792
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5618545908145130588}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 89d97053bc834854e81772807c6937de, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

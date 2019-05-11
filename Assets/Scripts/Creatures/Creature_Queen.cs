@@ -5,12 +5,14 @@ using UnityEngine;
 public class Creature_Queen : BaseCreature
 {
     public GameObject EggPrefab;
-    int layEggTimer = 0;
+    float layEggTimer = 0f;
+    int eggTime = 0;
 
     // Start is called before the first frame update
     protected override void Start()
     {
         base.Start();
+        SetEggLayingTime();
     }
 
     // Update is called once per frame
@@ -48,19 +50,25 @@ public class Creature_Queen : BaseCreature
 
     void CheckToLayEgg()
     {
-       if (layEggTimer > 100f)
+       if (layEggTimer > eggTime)
        {
             LayEgg();
             layEggTimer = 0;
+            SetEggLayingTime();
        } else
        {
-            layEggTimer++;
+            layEggTimer += Time.deltaTime;
        }
+    }
+
+    void SetEggLayingTime ()
+    {
+        eggTime = Random.Range(hive.eggLayingTimeMin, hive.eggLayingTimeMax);
     }
 
     void LayEgg ()
     {
-        Vector3 rPosition = Random.insideUnitCircle * hive.roamRadius;
+        Vector3 rPosition = Random.insideUnitCircle * hive.eggLayRadius;
         rPosition += startPosition;
         GameObject newEgg = Instantiate(EggPrefab);
         newEgg.transform.position = rPosition;
