@@ -12,4 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: FoodShapes
   m_EditorClassIdentifier: Assembly-CSharp::FoodShapeScriptable
-  foodShapes: []
+  foodShapes:
+  - image: {fileID: 21300000, guid: 52b26cc1c35752e4ebd69e7b7c9a7461, type: 3}
+    name: Egg
+  - image: {fileID: 21300000, guid: 42862d72d8c3f0d4faa2a52c2d797e7c, type: 3}
+    name: Cubes
+  - image: {fileID: 21300000, guid: 88f8f68ca65a89740bd13232e522a9f0, type: 3}
+    name: Yellow
+  - image: {fileID: 21300000, guid: 3f471d3a6bbb8c74e9c9b2365b0e7d2a, type: 3}
+    name: Cube
+  - image: {fileID: 21300000, guid: 6571c1af9e79f8b4cb419c388b5018b1, type: 3}
+    name: Slime
+  - image: {fileID: 21300000, guid: 3fafeb541dd628e4ba035d759d20122e, type: 3}
+    name: Cucumbers
+  - image: {fileID: 21300000, guid: ba7c8d5e754e8434a96c5e4cae8c032d, type: 3}
+    name: Powder
