@@ -5,11 +5,11 @@ using UnityEngine.AI;
 
 public class BaseCreature : MonoBehaviour
 {
-    HiveBehaviour hive;
+    protected HiveBehaviour hive;
 
-    Vector3 startPosition;
-    Vector3 moveDestination;
-    int changeDirectionCounter = 0;
+    protected Vector3 startPosition;
+    protected Vector3 moveDestination;
+    protected int changeDirectionCounter = 0;
 
     protected virtual void Start()
     {
@@ -33,10 +33,10 @@ public class BaseCreature : MonoBehaviour
     protected virtual void MoveAround ()
     {
         if (changeDirectionCounter <= 0) {
-            Vector3 randomPosition = GetRandomPosition();
+            Vector3 randomPosition = RandomPointInBounds();
 
             moveDestination = randomPosition;
-            changeDirectionCounter = 200;
+            changeDirectionCounter = 150;
         } else
         {
             changeDirectionCounter--;
@@ -45,19 +45,14 @@ public class BaseCreature : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, moveDestination, 0.2f);
     }
 
-    Vector3 GetRandomPosition ()
-    {
-        Vector3 randomDirection = Random.insideUnitCircle * hive.roamRadius;
-        randomDirection += startPosition;
 
-        if (hive.colliderBounds.bounds.Contains(moveDestination))
-        {
-            return randomDirection;
-        }
-        else
-        {
-            return startPosition;
-        }
+    Vector3 RandomPointInBounds() {
+        Bounds bounds = hive.colliderBounds.bounds;
+        return new Vector3(
+            Random.Range(bounds.min.x, bounds.max.x),
+            Random.Range(bounds.min.y, bounds.max.y),
+            Random.Range(bounds.min.z, bounds.max.z)
+        );
     }
 
     protected virtual void HitByLaser ()
