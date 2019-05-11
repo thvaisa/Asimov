@@ -2520,11 +2520,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3899565763575578618}
     m_Modifications:
-    - target: {fileID: 6297234234989355091, guid: 8d5927b3597c80b4aaa431ac05da006c,
+    - target: {fileID: 6297234234989355095, guid: 8d5927b3597c80b4aaa431ac05da006c,
         type: 3}
-      propertyPath: m_Name
-      value: Proto
-      objectReference: {fileID: 0}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 4820554825749156500}
     - target: {fileID: 6297234234989355090, guid: 8d5927b3597c80b4aaa431ac05da006c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2630,6 +2630,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6297234234989355091, guid: 8d5927b3597c80b4aaa431ac05da006c,
+        type: 3}
+      propertyPath: m_Name
+      value: Proto
+      objectReference: {fileID: 0}
     - target: {fileID: 6297234235308492267, guid: 8d5927b3597c80b4aaa431ac05da006c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2639,26 +2644,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.x
       value: 26.81
-      objectReference: {fileID: 0}
-    - target: {fileID: 6297234234858709759, guid: 8d5927b3597c80b4aaa431ac05da006c,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -1.6082
-      objectReference: {fileID: 0}
-    - target: {fileID: 6297234234858709759, guid: 8d5927b3597c80b4aaa431ac05da006c,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.00001061
-      objectReference: {fileID: 0}
-    - target: {fileID: 6297234234858709759, guid: 8d5927b3597c80b4aaa431ac05da006c,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 103.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 6297234234858709759, guid: 8d5927b3597c80b4aaa431ac05da006c,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 17.16
       objectReference: {fileID: 0}
     - target: {fileID: 6297234235668898890, guid: 8d5927b3597c80b4aaa431ac05da006c,
         type: 3}
@@ -2680,11 +2665,26 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 16.58
       objectReference: {fileID: 0}
-    - target: {fileID: 6297234234989355095, guid: 8d5927b3597c80b4aaa431ac05da006c,
+    - target: {fileID: 6297234234858709759, guid: 8d5927b3597c80b4aaa431ac05da006c,
         type: 3}
-      propertyPath: text
-      value: 
-      objectReference: {fileID: 4820554825749156500}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.6082
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297234234858709759, guid: 8d5927b3597c80b4aaa431ac05da006c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00001061
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297234234858709759, guid: 8d5927b3597c80b4aaa431ac05da006c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 103.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297234234858709759, guid: 8d5927b3597c80b4aaa431ac05da006c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 17.16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d5927b3597c80b4aaa431ac05da006c, type: 3}
 --- !u!224 &4820554825710456888 stripped
@@ -2849,11 +2849,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3899565763135484545}
     m_Modifications:
-    - target: {fileID: 6297234234989355091, guid: 8d5927b3597c80b4aaa431ac05da006c,
+    - target: {fileID: 6297234234989355095, guid: 8d5927b3597c80b4aaa431ac05da006c,
         type: 3}
-      propertyPath: m_Name
-      value: Proto
-      objectReference: {fileID: 0}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 3899565763316838748}
     - target: {fileID: 6297234234989355090, guid: 8d5927b3597c80b4aaa431ac05da006c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2959,11 +2959,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 6297234234989355095, guid: 8d5927b3597c80b4aaa431ac05da006c,
+    - target: {fileID: 6297234234989355091, guid: 8d5927b3597c80b4aaa431ac05da006c,
         type: 3}
-      propertyPath: text
-      value: 
-      objectReference: {fileID: 3899565763316838748}
+      propertyPath: m_Name
+      value: Proto
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d5927b3597c80b4aaa431ac05da006c, type: 3}
 --- !u!224 &3899565763422385136 stripped
