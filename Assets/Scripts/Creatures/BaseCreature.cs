@@ -36,13 +36,13 @@ public class BaseCreature : MonoBehaviour
             Vector3 randomPosition = RandomPointInBounds();
 
             moveDestination = randomPosition;
-            changeDirectionCounter = 150;
+            changeDirectionCounter = 250;
         } else
         {
             changeDirectionCounter--;
         }
 
-        transform.position = Vector2.MoveTowards(transform.position, moveDestination, 0.2f);
+        transform.position = Vector2.MoveTowards(transform.position, moveDestination, 0.4f);
     }
 
 

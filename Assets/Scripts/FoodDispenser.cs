@@ -30,6 +30,8 @@ public class FoodDispenser : MonoBehaviour
     public Image shapeImage;
     public Image spiceImage;
 
+    public AudioClip dispenseClip;
+
 
     void Start()
     {
@@ -51,6 +53,7 @@ public class FoodDispenser : MonoBehaviour
     public void DispensePress()
     {
         dispensePressed = true;
+        SoundManager.Instance.Play(dispenseClip);
     }
 
     void FailMe()
