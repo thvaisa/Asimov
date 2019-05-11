@@ -11,10 +11,13 @@ public class CreatureEgg : BaseCreature
     float hatchTimer = 0f;
     float hatchTimeLimit = 30f; //in seconds
 
+    public AudioClip warningtest;
+
     protected override void Start()
     {
         base.Start();
         hatchTimeLimit = hive.eggHatchTime;
+        SoundManager.Instance.Play(warningtest);
     }
 
     // Update is called once per frame
