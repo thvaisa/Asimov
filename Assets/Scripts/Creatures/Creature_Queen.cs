@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Creature_Queen : BaseCreature
 {
+    public GameObject EggPrefab;
+    int layEggTimer = 0;
+
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -14,6 +17,7 @@ public class Creature_Queen : BaseCreature
     protected override void Update()
     {
         base.Update();
+        CheckToLayEgg();
     }
 
     protected override void MoveAround()
@@ -40,5 +44,26 @@ public class Creature_Queen : BaseCreature
         randomDirection += startPosition;
 
         return randomDirection;
+    }
+
+    void CheckToLayEgg()
+    {
+       if (layEggTimer > 100f)
+       {
+            LayEgg();
+            layEggTimer = 0;
+       } else
+       {
+            layEggTimer++;
+       }
+    }
+
+    void LayEgg ()
+    {
+        Vector3 rPosition = Random.insideUnitCircle * hive.roamRadius;
+        rPosition += startPosition;
+        GameObject newEgg = Instantiate(EggPrefab);
+        newEgg.transform.position = rPosition;
+        newEgg.transform.SetParent(hive.transform);
     }
 }
