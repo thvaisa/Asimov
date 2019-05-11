@@ -90,6 +90,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EggPrefab: {fileID: 7527020666977018450, guid: 8a0366abf2376b64ebc8cf2e8318bd01,
     type: 3}
+  QueenEggPrefab: {fileID: 7961340237437932109, guid: ae4fd7c1ef8498c42a6660a77f7be78f,
+    type: 3}
 --- !u!95 &3760807143416287792
 Animator:
   serializedVersion: 3

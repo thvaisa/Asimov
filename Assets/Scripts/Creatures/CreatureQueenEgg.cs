@@ -2,18 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CreatureEgg : BaseCreature
+public class CreatureQueenEgg : CreatureEgg
 {
-    public GameObject soldierPrefab;
-    public GameObject workerPrefab;
-    public GameObject queenPrefab;
 
     float hatchTimer = 0f;
     float hatchTimeLimit = 30f; //in seconds
 
-    public AudioClip warningtest;
-    public AudioClip eggPlaced;
-    public AudioClip eggCrack;
 
     protected override void Start()
     {
@@ -21,7 +15,7 @@ public class CreatureEgg : BaseCreature
         hatchTimeLimit = hive.eggHatchTime;
         SoundManager.Instance.Play(eggPlaced);
 
-        TimerScript.Instance.WriteToLines("New egg detected.");
+        TimerScript.Instance.WriteToLines("Warning! Swarming event imminent.");
     }
 
     // Update is called once per frame
@@ -58,7 +52,6 @@ public class CreatureEgg : BaseCreature
         newCreature.transform.SetParent(hive.transform);
 
         //Play sound here?
-        TimerScript.Instance.WriteToLines("Egg hatched.");
         SoundManager.Instance.Play(eggCrack);
         hive.RemoveCreatureFromHive(this);
         Destroy(this.gameObject);

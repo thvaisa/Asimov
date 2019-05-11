@@ -19,6 +19,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2964793539851179896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7961340237437932109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c48325c49a302847961a0fda349df2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soldierPrefab: {fileID: 730529203332863725, guid: 0555c1244bd9e8a48bbf4a05e52cfc86,
+    type: 3}
+  workerPrefab: {fileID: 7792914135407182283, guid: 8872aacf2c678944b901de4b6e637b02,
+    type: 3}
+  queenPrefab: {fileID: 5618545908145130588, guid: 4cb3de3ec080ecc4e94835bc8dbb8512,
+    type: 3}
+  warningtest: {fileID: 0}
+  eggPlaced: {fileID: 8300000, guid: 902517963d15f8642a1403dd49373888, type: 3}
+  eggCrack: {fileID: 8300000, guid: b298180db5af13b4aa0e08c978ae8c60, type: 3}
 --- !u!1001 &434885064115056671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -99,12 +120,12 @@ PrefabInstance:
     - target: {fileID: 1896006062171244193, guid: 8a0366abf2376b64ebc8cf2e8318bd01,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 180
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 1896006062171244193, guid: 8a0366abf2376b64ebc8cf2e8318bd01,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 180
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 1896006062171244193, guid: 8a0366abf2376b64ebc8cf2e8318bd01,
         type: 3}
@@ -147,7 +168,8 @@ PrefabInstance:
       propertyPath: m_PreserveAspect
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 594149161551542307, guid: 8a0366abf2376b64ebc8cf2e8318bd01, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8a0366abf2376b64ebc8cf2e8318bd01, type: 3}
 --- !u!1 &7961340237437932109 stripped
 GameObject:

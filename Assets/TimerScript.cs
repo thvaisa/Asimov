@@ -12,11 +12,37 @@ public class TimerScript : MonoBehaviour
     public Text text;
     private float start_time = 99999999999f;
 
+    public List<ScreenLine> lines;
+    public int curLineIndex = 0;
+
+    // Singleton instance.
+    public static TimerScript Instance = null;
+
+    // Initialize the singleton instance.
+    private void Awake()
+    {
+        // If there is not already an instance of SoundManager, set it to this.
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        //If an instance already exists, destroy whatever this object is to enforce the singleton.
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
+
+        //Set this to DontDestroyOnLoad so that it won't be destroyed when reloading our scene.
+        DontDestroyOnLoad(gameObject);
+    }
+
     void Start()
     {
 
         PanelController panel = transform.GetComponent<PanelController>();
         panel.UpdateMe += UpdateMe;
+
+        ResetLines();
     }
 
     public void UpdateMe()
@@ -48,6 +74,28 @@ public class TimerScript : MonoBehaviour
         min = "0" + min;
         
         text.text =  min+ ":" + sec;
+    }
+
+    public void WriteToLines (string message)
+    {
+        if (curLineIndex >= (lines.Count - 1))
+        {
+            ResetLines();
+        }
+        lines[curLineIndex].Write(message);
+        lines[curLineIndex + 1].AwaitingInput();
+        curLineIndex++;
+    }
+
+    public void ResetLines()
+    {
+        foreach (ScreenLine line in lines)
+        {
+            line.Clear();
+        }
+
+        lines[0].AwaitingInput();
+        curLineIndex = 0;
     }
 
 }

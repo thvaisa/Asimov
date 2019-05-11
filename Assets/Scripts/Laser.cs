@@ -128,6 +128,6 @@ public class Laser : MonoBehaviour
         SoundManager.Instance.Play(laserAudio);
         GameObject explosion = Instantiate(laserExplosion);
         trackedObj.GetComponent<BaseCreature>().HitByLaser(explosion);
-        Destroy(tracker.gameObject); //Remove crosshair
+        tracker.gameObject.SetActive(false); //Remove crosshair
     }
 }
