@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 5524599067557237563}
   - component: {fileID: 5524599067557237560}
   - component: {fileID: 2003401376}
+  - component: {fileID: 7781688046266579264}
   m_Layer: 5
   m_Name: Worker
   m_TagString: Untagged
@@ -186,7 +187,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 175cc49d06bcd4a4eab89bf70b12e24f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cf94c9dcbe040654d891d7fb9c22f02b, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -207,6 +208,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c71ea89eac699e44a957ecf5849877e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &7781688046266579264
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5524599067557237558}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 686f2b57a29d4ad499ee90fb5d086646, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5524599068158315358
 GameObject:
   m_ObjectHideFlags: 0
