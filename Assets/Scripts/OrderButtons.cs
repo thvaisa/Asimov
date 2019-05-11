@@ -13,6 +13,7 @@ public class OrderButtons : MonoBehaviour {
     public GameObject buttonPrefab;
     public List<ButtonScript> buttons;
     public Transform leftPanel;
+    public Transform middlePanel;
     public Transform rightPanel;
     
     private Panel panel;
@@ -31,9 +32,14 @@ public class OrderButtons : MonoBehaviour {
         foreach(OrderButton orderButton in orderButtons.orderButtons)
         {
             GameObject obj = Instantiate(buttonPrefab);
-            if((++indx)%2==0)
+            ++indx;
+            if (indx % 3==0)
             {
                 obj.transform.parent = leftPanel;
+            }
+            else if (indx % 3 == 1)
+            {
+                obj.transform.parent = middlePanel;
             }
             else
             {
