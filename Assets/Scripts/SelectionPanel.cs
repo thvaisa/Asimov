@@ -31,7 +31,7 @@ public class SelectionPanel : MonoBehaviour
         
         foreach (var name in nameList)
         {
-            Debug.Log(name);
+            //Debug.Log(name);
             names.Add(name);
         }
         plusButton.onClick.AddListener(Plus);
@@ -42,10 +42,10 @@ public class SelectionPanel : MonoBehaviour
 
     void Plus()
     {
-        if (UpdateSmth != null) UpdateSmth();
         ++indx;
         CheckLimits();
         UpdateText();
+        if (UpdateSmth != null) UpdateSmth();
     }
 
     void UpdateText()
@@ -67,9 +67,10 @@ public class SelectionPanel : MonoBehaviour
 
     void Minus()
     {
-        if (UpdateSmth != null) UpdateSmth();
+        
         --indx;
         CheckLimits();
         UpdateText();
+        if (UpdateSmth != null) UpdateSmth();
     }
 }
