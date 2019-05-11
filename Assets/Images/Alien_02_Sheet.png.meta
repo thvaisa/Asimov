@@ -22,6 +22,20 @@ TextureImporter:
     21300034: Alien_02_Sheet_17
     21300036: Alien_02_Sheet_18
     21300038: Alien_02_Sheet_19
+    21300040: Alien_02_Sheet_20
+    21300042: Alien_02_Sheet_21
+    21300044: Alien_02_Sheet_22
+    21300046: Alien_02_Sheet_23
+    21300048: Alien_02_Sheet_24
+    21300050: Alien_02_Sheet_25
+    21300052: Alien_02_Sheet_26
+    21300054: Alien_02_Sheet_27
+    21300056: Alien_02_Sheet_28
+    21300058: Alien_02_Sheet_29
+    21300060: Alien_02_Sheet_30
+    21300062: Alien_02_Sheet_31
+    21300064: Alien_02_Sheet_32
+    21300066: Alien_02_Sheet_33
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -83,7 +97,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -94,7 +108,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -105,7 +119,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -119,9 +133,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 540.8
-        width: 192
-        height: 135.2
+        y: 1408
+        width: 500
+        height: 352
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,7 +143,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d19add15d62f462479ae65c1056f7d1d
+      spriteID: 6ec79d01dbba90d47bda24617fb61a05
       vertices: []
       indices: 
       edges: []
@@ -138,10 +152,10 @@ TextureImporter:
       name: Alien_02_Sheet_1
       rect:
         serializedVersion: 2
-        x: 192
-        y: 540.8
-        width: 192
-        height: 135.2
+        x: 500
+        y: 1408
+        width: 500
+        height: 352
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,7 +163,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cf5d2db4f4a5ef4e87b63abbe06c506
+      spriteID: 0a31828514453de47a9986cd91124912
       vertices: []
       indices: 
       edges: []
@@ -158,10 +172,10 @@ TextureImporter:
       name: Alien_02_Sheet_2
       rect:
         serializedVersion: 2
-        x: 384
-        y: 540.8
-        width: 192
-        height: 135.2
+        x: 1000
+        y: 1408
+        width: 500
+        height: 352
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,7 +183,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16023e188e04d864486ff4bef9f4fa3b
+      spriteID: 67b3100fa6a079644ba3a7d50e04646d
       vertices: []
       indices: 
       edges: []
@@ -178,10 +192,10 @@ TextureImporter:
       name: Alien_02_Sheet_3
       rect:
         serializedVersion: 2
-        x: 576
-        y: 540.8
-        width: 192
-        height: 135.2
+        x: 1500
+        y: 1408
+        width: 500
+        height: 352
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,7 +203,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28b9fe7ecb973dc43831ece0e365f29b
+      spriteID: 411feab557d64d745b9371158f56723a
       vertices: []
       indices: 
       edges: []
@@ -199,9 +213,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 405.8
-        width: 192
-        height: 135.2
+        y: 1056
+        width: 500
+        height: 352
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,7 +223,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14cc940ac93723b47a462a87f63927dd
+      spriteID: 41464e05135cbd6498c0107b5bb6a545
       vertices: []
       indices: 
       edges: []
@@ -218,10 +232,10 @@ TextureImporter:
       name: Alien_02_Sheet_5
       rect:
         serializedVersion: 2
-        x: 192
-        y: 405.8
-        width: 192
-        height: 135.2
+        x: 500
+        y: 1056
+        width: 500
+        height: 352
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,7 +243,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57c2ac3af47950a468bc3dd910bbf5af
+      spriteID: 15795f1182e17d14d82acc664e5081da
       vertices: []
       indices: 
       edges: []
@@ -238,10 +252,10 @@ TextureImporter:
       name: Alien_02_Sheet_6
       rect:
         serializedVersion: 2
-        x: 384
-        y: 405.8
-        width: 192
-        height: 135.2
+        x: 1000
+        y: 1056
+        width: 500
+        height: 352
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,7 +263,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16b332fc2de31d141901ba9944fdf0b3
+      spriteID: 809d6463ce290be43b13a3e1e27fb3e9
       vertices: []
       indices: 
       edges: []
@@ -258,10 +272,10 @@ TextureImporter:
       name: Alien_02_Sheet_7
       rect:
         serializedVersion: 2
-        x: 576
-        y: 405.8
-        width: 192
-        height: 135.2
+        x: 1500
+        y: 1056
+        width: 500
+        height: 352
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,7 +283,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 983f22af9c4551942b33a7bd9e485474
+      spriteID: 56bb8fa1ec4bbd841b57c2e2e68b4836
       vertices: []
       indices: 
       edges: []
@@ -279,9 +293,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 270.8
-        width: 192
-        height: 135.2
+        y: 704
+        width: 500
+        height: 352
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,7 +303,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9114b5aa74be96246b334d048cfaa466
+      spriteID: 7857541b74cd1ea4e8af1f7db90b7e09
       vertices: []
       indices: 
       edges: []
@@ -298,10 +312,10 @@ TextureImporter:
       name: Alien_02_Sheet_9
       rect:
         serializedVersion: 2
-        x: 192
-        y: 270.8
-        width: 192
-        height: 135.2
+        x: 500
+        y: 704
+        width: 500
+        height: 352
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,7 +323,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37f13ec0dffe5a84d972158e0608f317
+      spriteID: b3ad85be3ca2c2b4e8b9820d419fbbc2
       vertices: []
       indices: 
       edges: []
@@ -318,10 +332,10 @@ TextureImporter:
       name: Alien_02_Sheet_10
       rect:
         serializedVersion: 2
-        x: 384
-        y: 270.8
-        width: 192
-        height: 135.2
+        x: 1000
+        y: 704
+        width: 500
+        height: 352
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,7 +343,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aad290f1a0ae6244a8b0edcc7d3d4005
+      spriteID: 69c10e3a0d8ba4e429df149b7d5c6615
       vertices: []
       indices: 
       edges: []
@@ -338,10 +352,10 @@ TextureImporter:
       name: Alien_02_Sheet_11
       rect:
         serializedVersion: 2
-        x: 576
-        y: 270.8
-        width: 192
-        height: 135.2
+        x: 1500
+        y: 704
+        width: 500
+        height: 352
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,7 +363,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68f6d7d9d7a095041842fafef8392b6f
+      spriteID: ec462b68183559d4cb2e03526d9685e7
       vertices: []
       indices: 
       edges: []
@@ -359,9 +373,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 135.8
-        width: 192
-        height: 135.2
+        y: 352
+        width: 500
+        height: 352
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -369,7 +383,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a09cbde033849714487d1a7654bd94f6
+      spriteID: 46a2a0e3849158d459d9074a379fa16c
       vertices: []
       indices: 
       edges: []
@@ -378,10 +392,10 @@ TextureImporter:
       name: Alien_02_Sheet_13
       rect:
         serializedVersion: 2
-        x: 192
-        y: 135.8
-        width: 192
-        height: 135.2
+        x: 500
+        y: 352
+        width: 500
+        height: 352
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,7 +403,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e449ab0c2d818e1479e33f8a86bd7b52
+      spriteID: 5356822dbd209324eac6ff452151aec1
       vertices: []
       indices: 
       edges: []
@@ -398,10 +412,10 @@ TextureImporter:
       name: Alien_02_Sheet_14
       rect:
         serializedVersion: 2
-        x: 384
-        y: 135.8
-        width: 192
-        height: 135.2
+        x: 1000
+        y: 352
+        width: 500
+        height: 352
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -409,7 +423,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a11a5ad8c65453241a5b8a25a95345d9
+      spriteID: 41273562611155842a861c51dc3c7ded
       vertices: []
       indices: 
       edges: []
@@ -418,10 +432,10 @@ TextureImporter:
       name: Alien_02_Sheet_15
       rect:
         serializedVersion: 2
-        x: 576
-        y: 135.8
-        width: 192
-        height: 135.2
+        x: 1500
+        y: 352
+        width: 500
+        height: 352
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -429,7 +443,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65748ad79a0ef1949a56b2cfdeca82aa
+      spriteID: c4f2e764cc41366408bb523e9f78a18c
       vertices: []
       indices: 
       edges: []
@@ -439,9 +453,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0.80000305
-        width: 192
-        height: 135.2
+        y: 0
+        width: 500
+        height: 352
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,7 +463,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5acbba7864e11104e868b427b0ac0d21
+      spriteID: 3c9e48ed4cb0e6a489edbee0f9e66a84
       vertices: []
       indices: 
       edges: []
@@ -458,10 +472,10 @@ TextureImporter:
       name: Alien_02_Sheet_17
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0.80000305
-        width: 192
-        height: 135.2
+        x: 500
+        y: 0
+        width: 500
+        height: 352
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -469,7 +483,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9474da0ad602c384a9dd9934e6f45885
+      spriteID: 1fc8ee7243f4300459114c7ad77ed6e8
       vertices: []
       indices: 
       edges: []
@@ -478,10 +492,10 @@ TextureImporter:
       name: Alien_02_Sheet_18
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0.80000305
-        width: 192
-        height: 135.2
+        x: 1000
+        y: 0
+        width: 500
+        height: 352
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -489,7 +503,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a67eaf481ab91bd49bedd12daca3329a
+      spriteID: 2c29f0d67c04ec34dbea31f787b0a4d3
       vertices: []
       indices: 
       edges: []
@@ -498,10 +512,10 @@ TextureImporter:
       name: Alien_02_Sheet_19
       rect:
         serializedVersion: 2
-        x: 576
-        y: 0.80000305
-        width: 192
-        height: 135.2
+        x: 1500
+        y: 0
+        width: 500
+        height: 352
       alignment: 1
       pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -509,7 +523,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4212fbe64c7706d4db17ab4933968caa
+      spriteID: 58bce862b1bb8e64b8f290ecda387b3c
       vertices: []
       indices: 
       edges: []
