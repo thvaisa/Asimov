@@ -53,12 +53,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ButtonScript.cs" />
      <Compile Include="Assets\Scripts\Event.cs" />
      <Compile Include="Assets\Scripts\MainLogic.cs" />
      <Compile Include="Assets\Scripts\Order.cs" />
      <Compile Include="Assets\Scripts\OrderButton.cs" />
      <Compile Include="Assets\Scripts\OrderButtons.cs" />
-     <Compile Include="Assets\Scripts\OrderButtonsOrderButtonsScriptable.cs" />
+     <Compile Include="Assets\Scripts\OrderButtonsScriptable.cs" />
      <Compile Include="Assets\Scripts\Panel.cs" />
      <Compile Include="Assets\Scripts\PanelController.cs" />
      <Compile Include="Assets\Scripts\PanelGeneral.cs" />

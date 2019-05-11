@@ -5,13 +5,13 @@ using UnityEngine;
 
 
 public class MainLogic : MonoBehaviour {
-    public List<Panel> panels;
+    public List<PanelController> panels;
 	
     void Start(){
         //Get all panels
         foreach(PanelController panel in FindObjectsOfType<PanelController>())
         {
-            panels.Add(panel.GetComponent<Panel>());
+            panels.Add(panel);
         }
     }
 
@@ -20,11 +20,12 @@ public class MainLogic : MonoBehaviour {
         switch (status)
         {
             case STATUS.FAIL:
+                Debug.Log("FAIL");
                 break;
-                //EXPLODE
+                
             case STATUS.SUCCEED:
+                Debug.Log("SUCCEED");
                 break;
-                //NEXT PUZZLE
             default:
                 break;
         };
@@ -32,8 +33,9 @@ public class MainLogic : MonoBehaviour {
 
     //Go Through all the panels
     void Check(){
-        foreach(Panel panel in panels){
-            STATUS status = panel.Check_status();
+        foreach(PanelController panelC in panels){
+            panelC.UpdateMe(); 
+            STATUS status = panelC.panel.Check_status();
             Check_Condition(status);
         }
     }

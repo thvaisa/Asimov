@@ -7,4 +7,5 @@ using UnityEngine.UI;
 public class OrderButton {
     //public Image image;
     public string text;
+    public string code;
 }

@@ -11,6 +11,7 @@ public enum STATUS
 public class Panel{
     public STATUS status = STATUS.WAITING;
 
+
     public STATUS Check_status(){
         return status;
     }

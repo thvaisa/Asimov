@@ -3,5 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PanelController : MonoBehaviour {
-    Panel panel;
+    public Panel panel = new Panel();
+
+    public delegate void MyUpdate();
+    public MyUpdate UpdateMe;
+   
+ 
 }
