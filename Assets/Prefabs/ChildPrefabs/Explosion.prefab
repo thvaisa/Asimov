@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7527020666977018450
+--- !u!1 &5725250618259762244
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,25 +8,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1896006062171244193}
-  - component: {fileID: 7437097513915326689}
-  - component: {fileID: 518356234462056792}
-  - component: {fileID: 594149161551542307}
-  - component: {fileID: 8573949793437028010}
+  - component: {fileID: 5725250618259762245}
+  - component: {fileID: 5725250618259762243}
+  - component: {fileID: 5725250618259762242}
+  - component: {fileID: 5725250618259762240}
   m_Layer: 5
-  m_Name: Egg
+  m_Name: Explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1896006062171244193
+--- !u!224 &5725250618259762245
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7527020666977018450}
+  m_GameObject: {fileID: 5725250618259762244}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -37,23 +36,23 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7437097513915326689
+--- !u!222 &5725250618259762243
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7527020666977018450}
+  m_GameObject: {fileID: 5725250618259762244}
   m_CullTransparentMesh: 0
---- !u!114 &518356234462056792
+--- !u!114 &5725250618259762242
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7527020666977018450}
+  m_GameObject: {fileID: 5725250618259762244}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -67,7 +66,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 00e25c5905846e84bbf25967dbfca6be, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fa16aa6e974d3954788ec5ac7497387a, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -76,36 +75,17 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &594149161551542307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7527020666977018450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1e9069e20d0c414c8edf860566d2e3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soldierPrefab: {fileID: 730529203332863725, guid: 0555c1244bd9e8a48bbf4a05e52cfc86,
-    type: 3}
-  workerPrefab: {fileID: 7792914135407182283, guid: 8872aacf2c678944b901de4b6e637b02,
-    type: 3}
-  queenPrefab: {fileID: 5618545908145130588, guid: 4cb3de3ec080ecc4e94835bc8dbb8512,
-    type: 3}
-  warningtest: {fileID: 8300000, guid: 63d83294c83252741833b8fa8ecc5d11, type: 3}
---- !u!95 &8573949793437028010
+--- !u!95 &5725250618259762240
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7527020666977018450}
+  m_GameObject: {fileID: 5725250618259762244}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a9b81f5eca9aa604a9d4dbb92d858631, type: 2}
+  m_Controller: {fileID: 9100000, guid: b645e9e670e5d384dacef2c4efd5824f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
