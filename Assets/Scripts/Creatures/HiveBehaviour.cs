@@ -6,13 +6,14 @@ using System.Collections.Generic;
 public class HiveBehaviour : MonoBehaviour
 {
     public List<BaseCreature> creatures;
+    public BoxCollider2D colliderBounds;
 
     public float roamRadius = 30f;
     //public NavMesh _nav;
 
     void Start()
     {
-
+        colliderBounds = GetComponent<BoxCollider2D>();
     }
 
     void Update()

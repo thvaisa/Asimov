@@ -7,8 +7,9 @@ public class BaseCreature : MonoBehaviour
 {
     HiveBehaviour hive;
 
-    Vector2 startPosition;
-    Vector2 moveDestination;
+    Vector3 startPosition;
+    Vector3 moveDestination;
+    int changeDirectionCounter = 0;
 
     protected virtual void Start()
     {
@@ -31,10 +32,32 @@ public class BaseCreature : MonoBehaviour
 
     protected virtual void MoveAround ()
     {
-        Vector2 randomDirection = Random.insideUnitCircle * hive.roamRadius;
-        moveDestination = randomDirection + startPosition;
+        if (changeDirectionCounter <= 0) {
+            Vector3 randomPosition = GetRandomPosition();
 
-        transform.position= Vector2.MoveTowards(transform.position, moveDestination, 1f);
+            moveDestination = randomPosition;
+            changeDirectionCounter = 200;
+        } else
+        {
+            changeDirectionCounter--;
+        }
+
+        transform.position = Vector2.MoveTowards(transform.position, moveDestination, 0.2f);
+    }
+
+    Vector3 GetRandomPosition ()
+    {
+        Vector3 randomDirection = Random.insideUnitCircle * hive.roamRadius;
+        randomDirection += startPosition;
+
+        if (hive.colliderBounds.bounds.Contains(moveDestination))
+        {
+            return randomDirection;
+        }
+        else
+        {
+            return startPosition;
+        }
     }
 
     protected virtual void HitByLaser ()
