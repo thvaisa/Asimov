@@ -45,6 +45,10 @@ public class Laser : MonoBehaviour
     Queue<int> freeCrossHairs;
     Queue<int> usedCrossHairs;
 
+
+    public GameObject laserExplosion;
+    public AudioClip laserAudio;
+
     void Start()
     {
         freeCrossHairs = new Queue<int>();
@@ -117,5 +121,12 @@ public class Laser : MonoBehaviour
     }
 
 
+    public void ShootLaser (TrackObject tracker)
+    {
+        Transform trackedObj = tracker.trackedObject;
 
+        SoundManager.Instance.Play(laserAudio);
+        trackedObj.GetComponent<BaseCreature>().HitByLaser(laserExplosion);
+        Destroy(tracker.gameObject); //Remove crosshair
+    }
 }

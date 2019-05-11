@@ -95,6 +95,8 @@ MonoBehaviour:
   queenPrefab: {fileID: 5618545908145130588, guid: 4cb3de3ec080ecc4e94835bc8dbb8512,
     type: 3}
   warningtest: {fileID: 8300000, guid: 63d83294c83252741833b8fa8ecc5d11, type: 3}
+  eggPlaced: {fileID: 8300000, guid: 6eaeeae7803bd4b45944adc29e95ef62, type: 3}
+  eggCrack: {fileID: 8300000, guid: b298180db5af13b4aa0e08c978ae8c60, type: 3}
 --- !u!95 &8573949793437028010
 Animator:
   serializedVersion: 3

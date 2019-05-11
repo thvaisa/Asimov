@@ -55,9 +55,15 @@ public class BaseCreature : MonoBehaviour
         );
     }
 
-    protected virtual void HitByLaser ()
+    public virtual void HitByLaser (GameObject laserExplosion)
     {
+        Die();
 
+        GameObject explosion = Instantiate(laserExplosion);
+        explosion.transform.SetParent(transform);
+        explosion.transform.position = transform.position;
+
+        Destroy(gameObject);
     }
 
     protected virtual void Die ()

@@ -12,12 +12,14 @@ public class CreatureEgg : BaseCreature
     float hatchTimeLimit = 30f; //in seconds
 
     public AudioClip warningtest;
+    public AudioClip eggPlaced;
+    public AudioClip eggCrack;
 
     protected override void Start()
     {
         base.Start();
         hatchTimeLimit = hive.eggHatchTime;
-        SoundManager.Instance.Play(warningtest);
+        SoundManager.Instance.Play(eggPlaced);
     }
 
     // Update is called once per frame
@@ -54,6 +56,7 @@ public class CreatureEgg : BaseCreature
         newCreature.transform.SetParent(hive.transform);
 
         //Play sound here?
+        SoundManager.Instance.Play(eggCrack);
         hive.RemoveCreatureFromHive(this);
         Destroy(this.gameObject);
     }

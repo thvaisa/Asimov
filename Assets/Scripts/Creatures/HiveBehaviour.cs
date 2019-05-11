@@ -50,7 +50,7 @@ public class HiveBehaviour : MonoBehaviour
 
     void CheckPopulationCounts()
     {
-        
+        //Hardcoded!
     }
 
     public void AddCreatureToHive (BaseCreature newCreature)
