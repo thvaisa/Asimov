@@ -2010,12 +2010,22 @@ PrefabInstance:
     - target: {fileID: 500473282208563647, guid: 1a868e5add6283c4cbfe0b35ce3e7d88,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2.8
+      value: -22.8
       objectReference: {fileID: 0}
     - target: {fileID: 500473282208563647, guid: 1a868e5add6283c4cbfe0b35ce3e7d88,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -297
+      value: -287
+      objectReference: {fileID: 0}
+    - target: {fileID: 500473282208563647, guid: 1a868e5add6283c4cbfe0b35ce3e7d88,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 167.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 500473282208563647, guid: 1a868e5add6283c4cbfe0b35ce3e7d88,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 133.2
       objectReference: {fileID: 0}
     - target: {fileID: 3525196639438505614, guid: 1a868e5add6283c4cbfe0b35ce3e7d88,
         type: 3}

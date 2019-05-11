@@ -30,13 +30,18 @@ public class FoodDispenser : MonoBehaviour
     public Image shapeImage;
     public Image spiceImage;
 
+    public AudioClip dispenseClip;
+
 
     void Start()
     {
 
         PanelController panel = transform.GetComponent<PanelController>();
         panel.UpdateMe += UpdateMe;
-
+        foreach(string name in foodColors.GetNames())
+        {
+            Debug.Log(name);
+        }
         colorSelection.SetList(foodColors.GetNames());
         shapeSelection.SetList(foodShapes.GetNames());
         spiceSelection.SetList(foodSpices.GetNames());
@@ -51,6 +56,7 @@ public class FoodDispenser : MonoBehaviour
     public void DispensePress()
     {
         dispensePressed = true;
+        SoundManager.Instance.Play(dispenseClip);
     }
 
     void FailMe()

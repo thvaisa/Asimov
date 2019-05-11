@@ -132,7 +132,8 @@ public class Laser : MonoBehaviour
         Transform trackedObj = tracker.trackedObject;
 
         SoundManager.Instance.Play(laserAudio);
-        trackedObj.GetComponent<BaseCreature>().HitByLaser(laserExplosion);
+        GameObject explosion = Instantiate(laserExplosion);
+        trackedObj.GetComponent<BaseCreature>().HitByLaser(explosion);
         Destroy(tracker.gameObject); //Remove crosshair
     }
 }
