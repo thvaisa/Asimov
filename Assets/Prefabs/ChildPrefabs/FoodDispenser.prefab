@@ -104,6 +104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcb3f094423d57f4a9cbb8e82f4555c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  foodData: {fileID: 0}
+  elems: 0
   foodColors: {fileID: 11400000, guid: 278ee685634fa4c468019fbd022a9459, type: 2}
   foodShapes: {fileID: 11400000, guid: 85ccdd48a5687c84cbbb98b1430346a3, type: 2}
   foodSpices: {fileID: 11400000, guid: 0cd69d460682dc14bba25c98346e7ec1, type: 2}
@@ -118,6 +120,8 @@ MonoBehaviour:
   shapeImage: {fileID: 3525196639438505615}
   spiceImage: {fileID: 3525196640760853696}
   dispenseClip: {fileID: 8300000, guid: 5386c98b587d4b746b006706cf7dcafe, type: 3}
+  hive: {fileID: 0}
+  timer: {fileID: 0}
 --- !u!1 &500473281811446564
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,8 +372,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -4.3999634, y: -122.79999}
-  m_SizeDelta: {x: -427.7, y: -376.9}
+  m_AnchoredPosition: {x: -23.150024, y: -130.2}
+  m_SizeDelta: {x: -273.1, y: -296.19998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3525196639438505612
 CanvasRenderer:
@@ -442,8 +446,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -4.3999634, y: -122.79999}
-  m_SizeDelta: {x: -427.7, y: -376.9}
+  m_AnchoredPosition: {x: -22.910015, y: -136.805}
+  m_SizeDelta: {x: -292.42004, y: -335.99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3525196640760853697
 CanvasRenderer:
