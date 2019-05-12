@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MeterScript : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class MeterScript : MonoBehaviour
     public HandScript hand1;
     public HandScript hand2;
     public HandScript hand3;
+
+    public Text textLeft;
+    public Text textMiddle;
+    public Text textRight;
 
     public TimerScript timer;
     public HiveBehaviour hive;
@@ -25,6 +30,7 @@ public class MeterScript : MonoBehaviour
 
         timer = FindObjectOfType<TimerScript>();
         hive = FindObjectOfType<HiveBehaviour>();
+
     }
 
     public void UpdateMe()
