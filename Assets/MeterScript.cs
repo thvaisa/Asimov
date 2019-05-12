@@ -29,8 +29,9 @@ public class MeterScript : MonoBehaviour
 
     public void UpdateMe()
     {
-        meter2 = hive.GetPopulationSize()/ (1.0f*hive.MAXPOP);
 
+        meter1 = hive.aggressiveness / hive.maxAggressiveness;
+        meter2 = hive.GetPopulationSize()/ (1.0f*hive.MAXPOP);
         meter3 = timer.GetHungriness();
         hand1.UpdateMe(meter1);
         hand2.UpdateMe(meter2);

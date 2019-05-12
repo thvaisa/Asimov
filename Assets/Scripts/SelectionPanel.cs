@@ -31,7 +31,7 @@ public class SelectionPanel : MonoBehaviour
         names = new List<string>();
         foreach (var name in nameList)
         {
-            Debug.Log(name);
+            // Debug.Log(name);
             names.Add(name);
         }
         plusButton.onClick.AddListener(Plus);

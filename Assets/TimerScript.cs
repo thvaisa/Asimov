@@ -106,6 +106,7 @@ public class TimerScript : MonoBehaviour
             {
                 TimePasses(hive.GetPopulationSize());
                 eatCountdown = 0f;
+                if (full == 0) hive.IncreaseAggressiveness();
             }
             dTime = timeInMinutes-(time-start_time);
         }

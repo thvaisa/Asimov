@@ -20,12 +20,38 @@ public class HiveBehaviour : MonoBehaviour
     int queenCount = 1;
     private Creature_Queen queenObj;
 
-    public float aggressiveness = 0f;
+
+    
+    [Range(0, 100)] public float aggressiveness = 0f;
+    public float maxAggressiveness = 100.0f;
 
     public int MAXPOP = 8;
 
     public GameObject glassCrack_1;
     public GameObject glassCrack_2;
+
+    private void LimitAggressiviness()
+    {
+        if (aggressiveness > maxAggressiveness)
+        {
+            aggressiveness = maxAggressiveness;
+        }else if (aggressiveness < 0 )
+        {
+            aggressiveness = 0;
+        }
+    }
+
+    public void IncreaseAggressiveness()
+    {
+        aggressiveness += 3 * totalPopulation;
+        LimitAggressiviness();
+    }
+
+    public void DecreaseAggressiveness()
+    {
+        aggressiveness -= totalPopulation;
+        LimitAggressiviness();
+    }
 
     void Start()
     {
