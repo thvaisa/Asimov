@@ -29,6 +29,7 @@ public class HiveBehaviour : MonoBehaviour
 
     public GameObject glassCrack_1;
     public GameObject glassCrack_2;
+    public GameObject videoArrivalPrefab;
 
     private void LimitAggressiviness()
     {
@@ -157,5 +158,16 @@ public class HiveBehaviour : MonoBehaviour
         }
 
         glassCrack_2.SetActive(true);
+    }
+
+    public void PlaySuccesEndVideo ()
+    {
+        GameObject endVideo = Instantiate(videoArrivalPrefab);
+        endVideo.transform.SetParent(transform.parent);
+        RectTransform rt = endVideo.GetComponent<RectTransform>();
+        rt.offsetMin = new Vector2(0, rt.offsetMin.y);
+        rt.offsetMax = new Vector2(0, rt.offsetMax.y);
+        rt.offsetMax = new Vector2(rt.offsetMax.x, 0);
+        rt.offsetMin = new Vector2(rt.offsetMin.x, 0);
     }
 }

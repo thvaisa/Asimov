@@ -18,6 +18,8 @@ public class SoundManager : MonoBehaviour
     // Singleton instance.
     public static SoundManager Instance = null;
 
+    private bool setFadeMusic = false;
+
     // Initialize the singleton instance.
     private void Awake()
     {
@@ -41,11 +43,23 @@ public class SoundManager : MonoBehaviour
         PlayMusic(ambientLoop);
     }
 
+    private void Update()
+    {
+        if (setFadeMusic)
+        {
+            MusicSource.volume = Mathf.Max(0, MusicSource.volume - 0.08f);
+        }
+    }
+
     // Play a single clip through the sound effects source.
     public void Play(AudioClip clip)
     {
-        EffectsSource.clip = clip;
-        EffectsSource.Play();
+        if (!setFadeMusic)
+        {
+            EffectsSource.clip = clip;
+            EffectsSource.Play();
+        }
+
     }
 
     // Play a single clip through the music source.
@@ -96,5 +110,10 @@ public class SoundManager : MonoBehaviour
     public void Warning()
     {
         Play(voiceEffects[6]);
+    }
+
+    public void FadeMusic ()
+    {
+        setFadeMusic = true;
     }
 }

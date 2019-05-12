@@ -250,8 +250,13 @@ MonoBehaviour:
   eggLayingTimeMin: 10
   eggLayingTimeMax: 20
   eggHatchTime: 14
+  aggressiveness: 0
+  maxAggressiveness: 100
+  MAXPOP: 8
   glassCrack_1: {fileID: 3623814914895263554}
   glassCrack_2: {fileID: 5426917862264796329}
+  videoArrivalPrefab: {fileID: 479070561000637947, guid: 11f8755b002a6874f9e0d20c1fde0cd6,
+    type: 3}
 --- !u!61 &621560322
 BoxCollider2D:
   m_ObjectHideFlags: 0

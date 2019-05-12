@@ -44,3 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panels: []
+  gameOver: 0
+  voiceWin: {fileID: 8300000, guid: 40a66412e395ee64eb9753e7569dbd2e, type: 3}
+  voiceLoss: {fileID: 8300000, guid: b8c8da503ca5ac44397da416441b7d9c, type: 3}

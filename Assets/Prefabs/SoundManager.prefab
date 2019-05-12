@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98c40de3a02eb6441b76205db18ba210, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ambientLoop: {fileID: 8300000, guid: a0f2bc00d02888c4e985d9e097ccd746, type: 3}
+  ambientLoop: {fileID: 8300000, guid: 02d6aed86597d8847864f6ab98329ed9, type: 3}
   voiceEffects:
   - {fileID: 8300000, guid: 98df2ab1482a3364a8c18d43db9cb821, type: 3}
   - {fileID: 8300000, guid: 9bd6d571b0618504fb87bd36fe18a641, type: 3}
@@ -166,7 +166,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.46
   m_Pitch: 1
   Loop: 1
   Mute: 0

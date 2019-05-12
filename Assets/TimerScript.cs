@@ -53,7 +53,7 @@ public class TimerScript : MonoBehaviour
 
         full = maxfull;
         eatCountdown = 0.0f;
-
+        this.panel = panel.panel;
 
         ResetLines();
         hive = FindObjectOfType<HiveBehaviour>();
@@ -111,6 +111,11 @@ public class TimerScript : MonoBehaviour
             dTime = timeInMinutes-(time-start_time);
         }
         UpdateDisplay();
+
+        if (dTime <= 0)
+        {
+            panel.SUCCEED();
+        }
     }
 
     public void UpdateDisplay()

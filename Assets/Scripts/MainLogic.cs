@@ -6,6 +6,10 @@ using UnityEngine;
 
 public class MainLogic : MonoBehaviour {
     public List<PanelController> panels;
+    public bool gameOver = false;
+
+    public AudioClip voiceWin;
+    public AudioClip voiceLoss;
 	
     void Start(){
         //Get all panels
@@ -17,18 +21,28 @@ public class MainLogic : MonoBehaviour {
 
     //Check conditions
     void Check_Condition(STATUS status){
-        switch (status)
-        {
-            case STATUS.FAIL:
-                Debug.Log("FAIL");
-                break;
+        if (!gameOver) { 
+            switch (status)
+            {
+                case STATUS.FAIL:
+                    Debug.Log("FAIL");
+                    SoundManager.Instance.Play(voiceLoss);
+                    SoundManager.Instance.FadeMusic();
+                    gameOver = true;
+                    break;
                 
-            case STATUS.SUCCEED:
-                Debug.Log("SUCCEED");
-                break;
-            default:
-                break;
-        };
+                case STATUS.SUCCEED:
+                    Debug.Log("SUCCEED");
+                    FindObjectOfType<HiveBehaviour>().PlaySuccesEndVideo();
+                    SoundManager.Instance.Play(voiceWin);
+                    SoundManager.Instance.FadeMusic();
+                    gameOver = true;
+                    //INSERT SOUND FOR SUCCES TODO
+                    break;
+                default:
+                    break;
+            };
+        }
     }
 
     //Go Through all the panels
