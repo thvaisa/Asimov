@@ -44,9 +44,9 @@ public class BaseCreature : MonoBehaviour
 
         float moveSpeed = 0.4f;
         if (hive.aggressiveness > 0)
-            moveSpeed = moveSpeed + (hive.aggressiveness * 3f);
+            moveSpeed = moveSpeed + (hive.aggressiveness/100f * 4f);
 
-        transform.position = Vector2.MoveTowards(transform.position, moveDestination, 0.4f);
+        transform.position = Vector2.MoveTowards(transform.position, moveDestination, moveSpeed);
     }
 
 
