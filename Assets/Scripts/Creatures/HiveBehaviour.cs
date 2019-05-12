@@ -111,6 +111,12 @@ public class HiveBehaviour : MonoBehaviour
         creatures.Remove(removeCreature);
     }
 
+    public int GetPopulationSize()
+    {
+        return totalPopulation;
+    }
+
+
     public void GameLost(string lossType)
     {
         if (lossType == "Aliens dead")
