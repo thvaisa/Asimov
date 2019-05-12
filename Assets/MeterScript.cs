@@ -12,6 +12,9 @@ public class MeterScript : MonoBehaviour
     public HandScript hand2;
     public HandScript hand3;
 
+    public TimerScript timer;
+
+
     private Panel panel;
 
     void Start()
@@ -20,10 +23,12 @@ public class MeterScript : MonoBehaviour
         PanelController panel = transform.GetComponent<PanelController>();
         panel.UpdateMe += UpdateMe;
 
+        timer = FindObjectOfType<TimerScript>();
     }
 
     public void UpdateMe()
     {
+        meter3 = timer.GetHungriness();
         hand1.UpdateMe(meter1);
         hand2.UpdateMe(meter2);
         hand3.UpdateMe(meter3);
