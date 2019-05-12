@@ -41,8 +41,23 @@ public class FoodDispenser : MonoBehaviour
 
 
     public bool CorrectFood(int popSize, int Angriness, int Hungriness){
+        if (popSize == 5) popSize -= 1;
+        if (Angriness == 5) Angriness -= 1;
+        if (Hungriness == 5) Hungriness -= 1;
         int indx0 = 3 * (popSize + 5 * Angriness + Hungriness * 5 * 5);
         int conds = 0;
+        //Debug.Log(indx0);
+        //Debug.Log(foodData.data.Length);
+        //Debug.Log(popSize.ToString()+","+Angriness.ToString() + ","+Hungriness.ToString());
+        //Debug.Log("INDEX: "+foodData.data[indx0].ToString() + "," + foodData.data[indx0 + 1].ToString() + "," + foodData.data[indx0 + 2].ToString());
+        //Debug.Log("INDEX: " + foodColors.foodColors.Count.ToString() + "," + foodShapes.foodShapes.Count.ToString() + "," + foodSpices.foodSpices.Count.ToString());
+        //Debug.Log(foodData.data[indx0]);
+        int i = (int)System.Char.GetNumericValue(foodData.data[indx0]);
+        int j = (int)System.Char.GetNumericValue(foodData.data[indx0+1]);
+        int k = (int)System.Char.GetNumericValue(foodData.data[indx0+2]);
+        //Debug.Log((int)(foodData.data[indx0]));
+        //Debug.Log(foodColors.foodColors[(int)(foodData.data[indx0])].name);
+        Debug.Log("Expected: " + foodColors.foodColors[i].name+","+ foodShapes.foodShapes[j].name + "," + foodSpices.foodSpices[k].name);
         conds += CheckCondition(colorSelection.indx, foodData.data[indx0]);
         conds += CheckCondition(shapeSelection.indx, foodData.data[indx0+1]);
         conds += CheckCondition(spiceSelection.indx, foodData.data[indx0+2]);
@@ -67,9 +82,10 @@ public class FoodDispenser : MonoBehaviour
         spiceSelection.UpdateSmth = UpdateDisplay;
         dispenser.onClick.AddListener(DispensePress);
         this.panel = panel.panel;
-        UpdateDisplay();
+        
         hive = FindObjectOfType<HiveBehaviour>();
         timer = FindObjectOfType<TimerScript>();
+        UpdateDisplay();
     }
 
     public void DispensePress()
@@ -87,6 +103,7 @@ public class FoodDispenser : MonoBehaviour
     void UpdateDisplay()
     {
         Debug.Log(foodColors.foodColors[colorSelection.indx].name+ "," +foodShapes.foodShapes[shapeSelection.indx].name + "," + foodSpices.foodSpices[spiceSelection.indx].name);
+        CorrectFood((int)(5 * hive.GetAgrressivinesPercentage()), (int)(5 * timer.GetHungriness()), (int)(5 * hive.GetPopulationPercentage()));
         shapeImage.color = foodColors.foodColors[colorSelection.indx].color;
         shapeImage.sprite = foodShapes.foodShapes[shapeSelection.indx].image;
         spiceImage.sprite = foodSpices.foodSpices[spiceSelection.indx].image;
@@ -103,7 +120,7 @@ public class FoodDispenser : MonoBehaviour
     {
         if (dispensePressed)
         {
-            if (CorrectFood(1,1,1))
+            if (CorrectFood((int)(5 * hive.GetAgrressivinesPercentage()), (int)(5 * timer.GetHungriness()), (int)(5 * hive.GetPopulationPercentage())))
             {
                 hive.DecreaseAggressiveness();
                 timer.Eat();

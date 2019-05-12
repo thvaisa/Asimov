@@ -21,7 +21,7 @@ public class HiveBehaviour : MonoBehaviour
     private Creature_Queen queenObj;
 
 
-    
+
     [Range(0, 100)] public float aggressiveness = 0f;
     public float maxAggressiveness = 100.0f;
 
@@ -35,7 +35,7 @@ public class HiveBehaviour : MonoBehaviour
         if (aggressiveness > maxAggressiveness)
         {
             aggressiveness = maxAggressiveness;
-        }else if (aggressiveness < 0 )
+        } else if (aggressiveness < 0)
         {
             aggressiveness = 0;
         }
@@ -125,7 +125,7 @@ public class HiveBehaviour : MonoBehaviour
         }
     }
 
-    public void AddCreatureToHive (BaseCreature newCreature)
+    public void AddCreatureToHive(BaseCreature newCreature)
     {
         creatures.Add(newCreature);
 
@@ -157,5 +157,14 @@ public class HiveBehaviour : MonoBehaviour
         }
 
         glassCrack_2.SetActive(true);
+    }
+
+    public float GetPopulationPercentage(){
+        return GetPopulationSize() / (1.0f * MAXPOP);
+    }
+
+    public float GetAgrressivinesPercentage()
+    {
+        return aggressiveness / maxAggressiveness;
     }
 }
