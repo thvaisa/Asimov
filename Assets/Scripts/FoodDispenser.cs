@@ -36,6 +36,10 @@ public class FoodDispenser : MonoBehaviour
 
     public AudioClip dispenseClip;
 
+    public HiveBehaviour hive;
+    public TimerScript timer;
+
+
     public bool CorrectFood(int popSize, int Angriness, int Hungriness){
         int indx0 = 3 * (popSize + 5 * Angriness + Hungriness * 5 * 5);
         int conds = 0;
@@ -51,10 +55,10 @@ public class FoodDispenser : MonoBehaviour
 
         PanelController panel = transform.GetComponent<PanelController>();
         panel.UpdateMe += UpdateMe;
-        foreach(string name in foodColors.GetNames())
-        {
-            Debug.Log(name);
-        }
+        //foreach(string name in foodColors.GetNames())
+        //{
+        //    Debug.Log(name);
+        //}
         colorSelection.SetList(foodColors.GetNames());
         shapeSelection.SetList(foodShapes.GetNames());
         spiceSelection.SetList(foodSpices.GetNames());
@@ -64,6 +68,8 @@ public class FoodDispenser : MonoBehaviour
         dispenser.onClick.AddListener(DispensePress);
         this.panel = panel.panel;
         UpdateDisplay();
+        hive = FindObjectOfType<HiveBehaviour>();
+        timer = FindObjectOfType<TimerScript>();
     }
 
     public void DispensePress()
@@ -95,17 +101,16 @@ public class FoodDispenser : MonoBehaviour
 
     void UpdateMe()
     {
-       
         if (dispensePressed)
         {
-
             if (CorrectFood(1,1,1))
             {
-                panel.SUCCEED();
+                hive.DecreaseAggressiveness();
+                timer.Eat();
             }
             else
             {
-                panel.Fail();
+                hive.IncreaseAggressiveness();
             }
         }
     }
