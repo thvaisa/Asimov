@@ -8,6 +8,8 @@ public class HiveBehaviour : MonoBehaviour
     public List<BaseCreature> creatures;
     public BoxCollider2D colliderBounds;
 
+    private Panel panel;
+
     public float roamRadius = 30f;
     public float eggLayRadius = 80f;
     public int eggLayingTimeMin = 230; //in seconds
@@ -33,13 +35,8 @@ public class HiveBehaviour : MonoBehaviour
 
     private void LimitAggressiviness()
     {
-        if (aggressiveness > maxAggressiveness)
-        {
-            aggressiveness = maxAggressiveness;
-        }else if (aggressiveness < 0 )
-        {
-            aggressiveness = 0;
-        }
+        aggressiveness = Mathf.Min(maxAggressiveness, aggressiveness);
+        aggressiveness = Mathf.Max(0, aggressiveness);
     }
 
     public void IncreaseAggressiveness()
@@ -60,6 +57,11 @@ public class HiveBehaviour : MonoBehaviour
 
         glassCrack_1.SetActive(false);
         glassCrack_2.SetActive(false);
+
+        PanelController panel = transform.GetComponent<PanelController>();
+        panel.UpdateMe += UpdateMe;
+        this.panel = panel.panel;
+
     }
 
     void Update()
@@ -95,6 +97,11 @@ public class HiveBehaviour : MonoBehaviour
             //Nothing left. 
             GameLost("Aliens dead");
         }
+
+    }
+
+    void UpdateMe ()
+    {
 
     }
 
@@ -158,6 +165,7 @@ public class HiveBehaviour : MonoBehaviour
         }
 
         glassCrack_2.SetActive(true);
+        panel.Fail();
     }
 
     public void PlaySuccesEndVideo ()

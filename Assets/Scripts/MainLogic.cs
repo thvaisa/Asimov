@@ -48,9 +48,16 @@ public class MainLogic : MonoBehaviour {
     //Go Through all the panels
     void Check(){
         foreach(PanelController panelC in panels){
-            panelC.UpdateMe(); 
-            STATUS status = panelC.panel.Check_status();
-            Check_Condition(status);
+            if (panelC)
+            {
+                panelC.UpdateMe();
+                STATUS status = panelC.panel.Check_status();
+                Check_Condition(status);
+            }
+            else
+            {
+                Debug.Log("Null ref error!");
+            }
         }
     }
 
