@@ -68,6 +68,9 @@ public class CreatureEgg : BaseCreature
     {
         base.HitByLaser(explosion);
 
+        TimerScript.Instance.WriteToLines("Egg removed.");
         SoundManager.Instance.Play(eggCrack);
+
+        //Should anger the aliens???
     }
 }

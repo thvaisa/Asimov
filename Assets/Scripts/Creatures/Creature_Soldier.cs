@@ -15,4 +15,11 @@ public class Creature_Soldier : BaseCreature
     {
         base.Update();
     }
+
+    public override void HitByLaser(GameObject explosion)
+    {
+        base.HitByLaser(explosion);
+
+        TimerScript.Instance.WriteToLines("Soldier-type alien removed.");
+    }
 }

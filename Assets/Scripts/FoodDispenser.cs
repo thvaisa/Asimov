@@ -57,6 +57,7 @@ public class FoodDispenser : MonoBehaviour
     {
         dispensePressed = true;
         SoundManager.Instance.Play(dispenseClip);
+        TimerScript.Instance.WriteToLines("Food dispensed.");
     }
 
     void FailMe()
