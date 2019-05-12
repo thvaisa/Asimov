@@ -63,4 +63,11 @@ public class CreatureEgg : BaseCreature
         hive.RemoveCreatureFromHive(this);
         Destroy(this.gameObject);
     }
+
+    public override void HitByLaser(GameObject explosion)
+    {
+        base.HitByLaser(explosion);
+
+        SoundManager.Instance.Play(eggCrack);
+    }
 }

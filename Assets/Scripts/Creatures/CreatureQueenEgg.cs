@@ -14,6 +14,7 @@ public class CreatureQueenEgg : CreatureEgg
         base.Start();
         hatchTimeLimit = hive.eggHatchTime;
         SoundManager.Instance.Play(eggPlaced);
+        SoundManager.Instance.BioHazard();
 
         TimerScript.Instance.WriteToLines("Warning! Swarming event imminent.");
     }
@@ -55,5 +56,12 @@ public class CreatureQueenEgg : CreatureEgg
         SoundManager.Instance.Play(eggCrack);
         hive.RemoveCreatureFromHive(this);
         Destroy(this.gameObject);
+    }
+
+    public override void HitByLaser(GameObject explosion)
+    {
+        base.HitByLaser(explosion);
+
+        SoundManager.Instance.SwarmRemoved();
     }
 }

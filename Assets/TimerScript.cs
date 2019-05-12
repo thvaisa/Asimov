@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class TimerScript : MonoBehaviour
 {
-    public float timeInMinutes = 5*60;
+    public float timeInMinutes = 3*60;
     public float dTime = 0;
 
     private Panel panel;
