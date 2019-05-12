@@ -42,13 +42,8 @@ public class CreatureQueenEgg : CreatureEgg
         float random = Random.Range(0, 100f);
 
         GameObject newCreature;
-        if (random < 50)
-        {
-            newCreature = Instantiate(soldierPrefab);
-        } else
-        {
-            newCreature = Instantiate(workerPrefab);
-        }
+
+        newCreature = Instantiate(queenPrefab);
         newCreature.transform.position = transform.position;
         newCreature.transform.SetParent(hive.transform);
 
