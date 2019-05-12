@@ -41,7 +41,7 @@ public class HiveBehaviour : MonoBehaviour
 
     public void IncreaseAggressiveness()
     {
-        aggressiveness += 3 * totalPopulation;
+        aggressiveness += 10*totalPopulation;
         LimitAggressiviness();
     }
 
@@ -102,11 +102,19 @@ public class HiveBehaviour : MonoBehaviour
 
     void UpdateMe ()
     {
-
+       
     }
 
     void CheckPopulationCounts()
     {
+        if ( GetAgrressivinesPercentage()>=1.0 && GetPopulationSize()>0.5)
+        {
+            
+            GameLost("Hive ate you");
+        }
+
+
+
         if (queenCount < 1)
         {
             //No more queen, do lose event.
