@@ -21,6 +21,8 @@ public class TimerScript : MonoBehaviour
     public List<ScreenLine> lines;
     public int curLineIndex = 0;
 
+    public HiveBehaviour hive;
+
     // Singleton instance.
     public static TimerScript Instance = null;
 
@@ -54,7 +56,7 @@ public class TimerScript : MonoBehaviour
 
 
         ResetLines();
-
+        hive = FindObjectOfType<HiveBehaviour>();
     }
 
     public float GetHungriness()
@@ -65,13 +67,26 @@ public class TimerScript : MonoBehaviour
     public void Eat()
     {
         full = full + 25;
-        if (full > maxfull) full = maxfull;
+        FullLimits();
+    }
+
+    public void FullLimits()
+    {
+        if (full > maxfull)
+        {
+            full = maxfull;
+        }
+        else if (full < 0.0f)
+        {
+            full = 0;
+        }
     }
 
 
     public void TimePasses(int popSize)
     {
         full = full - popSize;
+        FullLimits();
     }
 
 
@@ -89,7 +104,7 @@ public class TimerScript : MonoBehaviour
             eatCountdown += (time - start_time);
             if (eatCountdown > 1.0f)
             {
-                TimePasses(1);
+                TimePasses(hive.GetPopulationSize());
                 eatCountdown = 0f;
             }
             dTime = timeInMinutes-(time-start_time);
