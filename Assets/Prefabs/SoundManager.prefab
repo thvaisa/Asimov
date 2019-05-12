@@ -46,6 +46,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ambientLoop: {fileID: 8300000, guid: a0f2bc00d02888c4e985d9e097ccd746, type: 3}
+  voiceEffects:
+  - {fileID: 8300000, guid: 98df2ab1482a3364a8c18d43db9cb821, type: 3}
+  - {fileID: 8300000, guid: 9bd6d571b0618504fb87bd36fe18a641, type: 3}
+  - {fileID: 8300000, guid: 358292dbd76908b4ebbc57322f8403a3, type: 3}
+  - {fileID: 8300000, guid: a20bb2e84980ba74584f610d571132c7, type: 3}
+  - {fileID: 8300000, guid: 21f2c71b93314a84096b90c89f964b4c, type: 3}
+  - {fileID: 8300000, guid: 57110dca007ca3f4bb0ce53281c251ce, type: 3}
+  - {fileID: 8300000, guid: b6bf2c4609c5a3648930adaaf12e36e7, type: 3}
   EffectsSource: {fileID: 8103552498000630851}
   MusicSource: {fileID: 3199074829992536122}
   LowPitchRange: 0.95

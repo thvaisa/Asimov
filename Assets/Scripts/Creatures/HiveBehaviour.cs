@@ -18,6 +18,7 @@ public class HiveBehaviour : MonoBehaviour
     float ratioWorkers = 0.5f;
     int totalPopulation = 4;
     int queenCount = 1;
+    private Creature_Queen queenObj;
 
 
     public GameObject glassCrack_1;
@@ -74,12 +75,35 @@ public class HiveBehaviour : MonoBehaviour
             //No more queen, do lose event.
             GameLost("Queen dead");
         }
-        //Hardcoded!
+        //Hardcoded!  > 8 (>60% workers)
+
+        if (FindObjectsOfType<CreatureQueenEgg>().Length == 0)
+        {
+            if (totalPopulation > 8)
+            {
+                queenObj.LayQueenEgg();
+            }
+            if (ratioWorkers > 0.6f)
+            {
+                queenObj.LayQueenEgg();
+            }
+        }
+
+
+        if (totalPopulation < 4)
+        {
+            //Population low, insects are scared and fight.
+        }
     }
 
     public void AddCreatureToHive (BaseCreature newCreature)
     {
         creatures.Add(newCreature);
+
+        if (newCreature.GetComponent<Creature_Queen>())
+        {
+            queenObj = newCreature.GetComponent<Creature_Queen>();
+        }
     }
 
     public void RemoveCreatureFromHive(BaseCreature removeCreature)

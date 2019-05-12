@@ -5,6 +5,7 @@ using UnityEngine;
 public class Creature_Queen : BaseCreature
 {
     public GameObject EggPrefab;
+    public GameObject QueenEggPrefab;
     float layEggTimer = 0f;
     int eggTime = 0;
 
@@ -71,6 +72,17 @@ public class Creature_Queen : BaseCreature
         Vector3 rPosition = Random.insideUnitCircle * hive.eggLayRadius;
         rPosition += startPosition;
         GameObject newEgg = Instantiate(EggPrefab);
+        newEgg.transform.position = rPosition;
+        newEgg.transform.SetParent(hive.transform);
+    }
+
+
+    //Warning, swarm event
+    public void LayQueenEgg ()
+    {
+        Vector3 rPosition = Random.insideUnitCircle * hive.eggLayRadius;
+        rPosition += startPosition;
+        GameObject newEgg = Instantiate(QueenEggPrefab);
         newEgg.transform.position = rPosition;
         newEgg.transform.SetParent(hive.transform);
     }
