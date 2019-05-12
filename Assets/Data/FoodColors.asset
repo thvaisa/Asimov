@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: FoodColors
   m_EditorClassIdentifier: 
   foodColors:
-  - color: {r: 0.956295, g: 1, b: 0, a: 1}
+  - color: {r: 0.9475792, g: 0.9622642, b: 0.62184054, a: 1}
     name: Potato
-  - color: {r: 1, g: 0.051886797, b: 0.051886797, a: 1}
+  - color: {r: 0.8018868, g: 0.049172327, b: 0.049172327, a: 1}
     name: Tomato
-  - color: {r: 0.0047169924, g: 0.14002961, b: 1, a: 1}
-    name: Blueberry
-  - color: {r: 0, g: 1, b: 0.08742452, a: 1}
-    name: Lettuce
-  - color: {r: 0.3490566, g: 0.10960569, b: 0.054334287, a: 1}
+  - color: {r: 1, g: 0.5393293, b: 0.4575472, a: 1}
+    name: Pomato
+  - color: {r: 0.0018244971, g: 0.38679248, b: 0.035037465, a: 1}
+    name: Dinosaur
+  - color: {r: 0.754717, g: 0.31834647, b: 0.2171591, a: 1}
     name: Human
