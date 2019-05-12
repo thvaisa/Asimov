@@ -22,6 +22,9 @@ public class TimerScript : MonoBehaviour
     public int curLineIndex = 0;
 
     public HiveBehaviour hive;
+    public float MaxCountdown = 1.0f;
+
+    private float time;
 
     // Singleton instance.
     public static TimerScript Instance = null;
@@ -96,13 +99,15 @@ public class TimerScript : MonoBehaviour
         if (start_time >= 9999999999f)
         {
             start_time = Time.time;
+            time = start_time;
             dTime = timeInMinutes;
         }
         else
         {
-            float time = Time.time;
-            eatCountdown += (time - start_time);
-            if (eatCountdown > 1.0f)
+            eatCountdown += (Time.time-time);
+            Debug.Log(eatCountdown);
+            time = Time.time;
+            if (eatCountdown > MaxCountdown)
             {
                 TimePasses(hive.GetPopulationSize());
                 eatCountdown = 0f;
