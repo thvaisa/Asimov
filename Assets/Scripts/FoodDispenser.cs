@@ -44,7 +44,7 @@ public class FoodDispenser : MonoBehaviour
         if (popSize == 5) popSize -= 1;
         if (Angriness == 5) Angriness -= 1;
         if (Hungriness == 5) Hungriness -= 1;
-        int indx0 = 3 * (popSize + 5 * Angriness + Hungriness * 5 * 5);
+        int indx0 = 3 * (Angriness + 5 * popSize + Hungriness * 5 * 5);
         int conds = 0;
         //Debug.Log(indx0);
         //Debug.Log(foodData.data.Length);
@@ -129,6 +129,7 @@ public class FoodDispenser : MonoBehaviour
             {
                 hive.IncreaseAggressiveness();
             }
+            dispensePressed = false;
         }
     }
 
