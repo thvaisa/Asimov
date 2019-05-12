@@ -62,6 +62,7 @@ public class CreatureQueenEgg : CreatureEgg
     {
         base.HitByLaser(explosion);
 
+        TimerScript.Instance.WriteToLines("Anomaly removed.");
         SoundManager.Instance.SwarmRemoved();
     }
 }

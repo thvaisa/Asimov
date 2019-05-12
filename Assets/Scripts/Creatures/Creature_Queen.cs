@@ -86,4 +86,11 @@ public class Creature_Queen : BaseCreature
         newEgg.transform.position = rPosition;
         newEgg.transform.SetParent(hive.transform);
     }
+
+    public override void HitByLaser(GameObject explosion)
+    {
+        base.HitByLaser(explosion);
+
+        TimerScript.Instance.WriteToLines("Observed Queen's death. Hive compromised.");
+    }
 }
