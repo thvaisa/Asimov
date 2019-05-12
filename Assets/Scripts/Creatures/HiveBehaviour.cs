@@ -20,6 +20,7 @@ public class HiveBehaviour : MonoBehaviour
     int queenCount = 1;
     private Creature_Queen queenObj;
 
+    public int MAXPOP = 8;
 
     public GameObject glassCrack_1;
     public GameObject glassCrack_2;
@@ -79,7 +80,7 @@ public class HiveBehaviour : MonoBehaviour
 
         if (FindObjectsOfType<CreatureQueenEgg>().Length == 0)
         {
-            if (totalPopulation > 8)
+            if (totalPopulation > MAXPOP)
             {
                 queenObj.LayQueenEgg();
             }
