@@ -10,6 +10,10 @@ using UnityEngine.UI;
 
 public class FoodDispenser : MonoBehaviour
 {
+
+    public DataArray foodData;
+    public int elems; 
+
     public FoodColorScriptable foodColors;
     public FoodShapeScriptable foodShapes;
     public FoodSpiceScriptable foodSpices;
@@ -31,6 +35,15 @@ public class FoodDispenser : MonoBehaviour
     public Image spiceImage;
 
     public AudioClip dispenseClip;
+
+    public bool CorrectFood(int popSize, int Angriness, int Hungriness){
+        int indx0 = 3 * (popSize + 5 * Angriness + Hungriness * 5 * 5);
+        int conds = 0;
+        conds += CheckCondition(colorSelection.indx, foodData.data[indx0]);
+        conds += CheckCondition(shapeSelection.indx, foodData.data[indx0+1]);
+        conds += CheckCondition(spiceSelection.indx, foodData.data[indx0+2]);
+        return (conds == 3);
+    }
 
 
     void Start()
@@ -73,21 +86,19 @@ public class FoodDispenser : MonoBehaviour
     }
 
 
-    int CheckCondition(string name, string name2)
+    int CheckCondition(int name, int name2)
     {
-        if(name.Equals(name2)) return 1;
+        if(name==name2) return 1;
         return 0;
     }
 
     void UpdateMe()
     {
-        int conds = 0;
+       
         if (dispensePressed)
         {
-            conds += CheckCondition(foodColors.foodColors[colorSelection.indx].name, expectColor) ;
-            conds += CheckCondition(foodShapes.foodShapes[shapeSelection.indx].name, expectShape);
-            conds += CheckCondition(foodSpices.foodSpices[spiceSelection.indx].name, expectSpice);
-            if (conds == 3)
+
+            if (CorrectFood(1,1,1))
             {
                 panel.SUCCEED();
             }
