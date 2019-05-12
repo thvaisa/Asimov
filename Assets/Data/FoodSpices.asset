@@ -14,16 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FoodSpiceScriptable
   foodSpices:
   - image: {fileID: 21300000, guid: 3b734fb3fed49e344ba601c3f49e3a2d, type: 3}
-    name: Peanut
+    name: Bean
   - image: {fileID: 21300000, guid: de5260283b2129a4ca268371a1bbbba8, type: 3}
     name: Curry
   - image: {fileID: 21300000, guid: 16c3e39c0af4a734a9f9988fd99b4d38, type: 3}
-    name: Tabasco
+    name: Nuts
   - image: {fileID: 21300000, guid: baf9cba4058d3fb46805dcd87d1f3946, type: 3}
-    name: Pickles
+    name: Peanuts
   - image: {fileID: 21300000, guid: d38767a383d48c14295ba05894bea462, type: 3}
-    name: Oregano
-  - image: {fileID: 21300000, guid: 5862a5091dc8c8c449f8d93cf204b375, type: 3}
-    name: IDontKnow
-  - image: {fileID: 21300000, guid: 0cc8c182eb116dd4ea8e6b69cb0203b2, type: 3}
-    name: Pepper
+    name: Curri
