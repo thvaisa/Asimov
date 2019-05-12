@@ -41,7 +41,7 @@ public class HiveBehaviour : MonoBehaviour
 
     public void IncreaseAggressiveness()
     {
-        aggressiveness += 10*totalPopulation;
+        aggressiveness += totalPopulation;
         LimitAggressiviness();
     }
 

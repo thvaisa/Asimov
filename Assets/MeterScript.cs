@@ -39,6 +39,15 @@ public class MeterScript : MonoBehaviour
         meter1 = hive.GetAgrressivinesPercentage();
         meter2 = hive.GetPopulationPercentage();
         meter3 = timer.GetHungriness();
+        int i = (int)(5 * hive.GetAgrressivinesPercentage());   
+        int j = (int)(5 * hive.GetPopulationPercentage());
+        int k = (int)(5 * timer.GetHungriness());
+        if (i > 4) i = 4;
+        if (j > 4) j = 4;
+        if (k > 4) k = 4;
+        textLeft.text = i.ToString();
+        textMiddle.text = j.ToString();
+        textRight.text = k.ToString();
         hand1.UpdateMe(meter1);
         hand2.UpdateMe(meter2);
         hand3.UpdateMe(meter3);

@@ -40,21 +40,24 @@ public class FoodDispenser : MonoBehaviour
     public TimerScript timer;
 
 
-    public bool CorrectFood(int popSize, int Angriness, int Hungriness){
-        if (popSize == 5) popSize -= 1;
-        if (Angriness == 5) Angriness -= 1;
-        if (Hungriness == 5) Hungriness -= 1;
+    public bool CorrectFood( int Angriness, int popSize, int Hungriness){
+        if (popSize > 4) popSize = 4;
+        if (Angriness > 4) Angriness = 4;
+        if (Hungriness > 4) Hungriness =4;
         int indx0 = 3 * (Angriness + 5 * popSize + Hungriness * 5 * 5);
         int conds = 0;
         //Debug.Log(indx0);
         //Debug.Log(foodData.data.Length);
-        //Debug.Log(popSize.ToString()+","+Angriness.ToString() + ","+Hungriness.ToString());
-        //Debug.Log("INDEX: "+foodData.data[indx0].ToString() + "," + foodData.data[indx0 + 1].ToString() + "," + foodData.data[indx0 + 2].ToString());
+        Debug.Log(Angriness.ToString()+","+ popSize.ToString() + ","+Hungriness.ToString());
+      
+        Debug.Log("INDEX: "+foodData.data[indx0].ToString() + "," + foodData.data[indx0 + 1].ToString() + "," + foodData.data[indx0 + 2].ToString());
         //Debug.Log("INDEX: " + foodColors.foodColors.Count.ToString() + "," + foodShapes.foodShapes.Count.ToString() + "," + foodSpices.foodSpices.Count.ToString());
         //Debug.Log(foodData.data[indx0]);
+        Debug.Log(indx0);
         int i = (int)System.Char.GetNumericValue(foodData.data[indx0]);
         int j = (int)System.Char.GetNumericValue(foodData.data[indx0+1]);
         int k = (int)System.Char.GetNumericValue(foodData.data[indx0+2]);
+       
         //Debug.Log((int)(foodData.data[indx0]));
         //Debug.Log(foodColors.foodColors[(int)(foodData.data[indx0])].name);
         Debug.Log("Expected: " + foodColors.foodColors[i].name+","+ foodShapes.foodShapes[j].name + "," + foodSpices.foodSpices[k].name);
@@ -102,8 +105,10 @@ public class FoodDispenser : MonoBehaviour
 
     void UpdateDisplay()
     {
+        Debug.Log("HUngry" + ((int)(5 * timer.GetHungriness())).ToString() + " " + timer.GetHungriness().ToString());
+        Debug.Log("asdasd"+timer.GetHungriness().ToString());
         Debug.Log(foodColors.foodColors[colorSelection.indx].name+ "," +foodShapes.foodShapes[shapeSelection.indx].name + "," + foodSpices.foodSpices[spiceSelection.indx].name);
-        CorrectFood((int)(5 * hive.GetAgrressivinesPercentage()), (int)(5 * timer.GetHungriness()), (int)(5 * hive.GetPopulationPercentage()));
+        CorrectFood((int)(5 * hive.GetAgrressivinesPercentage()), (int)(5 * hive.GetPopulationPercentage()), (int)(5 * timer.GetHungriness()));
         shapeImage.color = foodColors.foodColors[colorSelection.indx].color;
         shapeImage.sprite = foodShapes.foodShapes[shapeSelection.indx].image;
         spiceImage.sprite = foodSpices.foodSpices[spiceSelection.indx].image;
@@ -120,7 +125,9 @@ public class FoodDispenser : MonoBehaviour
     {
         if (dispensePressed)
         {
-            if (CorrectFood((int)(5 * hive.GetAgrressivinesPercentage()), (int)(5 * timer.GetHungriness()), (int)(5 * hive.GetPopulationPercentage())))
+            Debug.Log("HUngry"+((int)(5 * timer.GetHungriness())).ToString()+" "+ timer.GetHungriness().ToString());
+            
+            if (CorrectFood((int)(5 * hive.GetAgrressivinesPercentage()), (int)(5 * hive.GetPopulationPercentage()), (int)(5 * timer.GetHungriness())))
             {
                 hive.DecreaseAggressiveness();
                 timer.Eat();

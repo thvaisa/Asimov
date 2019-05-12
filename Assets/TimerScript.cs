@@ -22,7 +22,7 @@ public class TimerScript : MonoBehaviour
     public int curLineIndex = 0;
 
     public HiveBehaviour hive;
-    public float MaxCountdown = 1.0f;
+    public float MaxCountdown = 5.0f;
 
     private float time;
 
@@ -64,7 +64,9 @@ public class TimerScript : MonoBehaviour
 
     public float GetHungriness()
     {
-        return (maxfull - full)/(1f*maxfull);
+        //Debug.Log((maxfull - full) * 1.0f / (1.0f * maxfull));
+        //return (maxfull - full)*1.0f/(1.0f*maxfull);
+        return 1.0f;
     }
 
     public void Eat()
@@ -105,14 +107,16 @@ public class TimerScript : MonoBehaviour
         else
         {
             eatCountdown += (Time.time-time);
-            Debug.Log(eatCountdown);
+            //Debug.Log(eatCountdown);
             time = Time.time;
             if (eatCountdown > MaxCountdown)
             {
                 TimePasses(hive.GetPopulationSize());
                 eatCountdown = 0f;
-                if (full == 0) hive.IncreaseAggressiveness();
+                hive.IncreaseAggressiveness();
             }
+            //if (full <= 10.0f)
+           
             dTime = timeInMinutes-(time-start_time);
         }
         UpdateDisplay();
