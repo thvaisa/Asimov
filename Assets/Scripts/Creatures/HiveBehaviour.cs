@@ -20,6 +20,8 @@ public class HiveBehaviour : MonoBehaviour
     int queenCount = 1;
     private Creature_Queen queenObj;
 
+    public float aggressiveness = 0f;
+
 
     public GameObject glassCrack_1;
     public GameObject glassCrack_2;
