@@ -8,8 +8,8 @@ public class CreatureEgg : BaseCreature
     public GameObject workerPrefab;
     public GameObject queenPrefab;
 
-    float hatchTimer = 0f;
-    float hatchTimeLimit = 30f; //in seconds
+    protected float hatchTimer = 0f;
+    protected float hatchTimeLimit = 30f; //in seconds
 
     public AudioClip warningtest;
     public AudioClip eggPlaced;

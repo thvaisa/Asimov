@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class CreatureQueenEgg : CreatureEgg
 {
-
-    float hatchTimer = 0f;
-    float hatchTimeLimit = 30f; //in seconds
-
-
     protected override void Start()
     {
         base.Start();
