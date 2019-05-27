@@ -13,23 +13,6 @@ public class LaserColor
 }
 
 
-[CreateAssetMenu(fileName = "Data", menuName = "LaserColorScriptable", order = 1)]
-public class LaserColorScriptable : ScriptableObject
-{
-    public List<LaserColor> laserColors;
-
-    public List<string> GetNames()
-    {
-        List<string> names = new List<string>();
-        foreach (LaserColor color in laserColors)
-        {
-            names.Add(color.name);
-        }
-        return names;
-    }
-
-}
-
 public class Laser : MonoBehaviour
 {
     public LaserColorScriptable laserColors;

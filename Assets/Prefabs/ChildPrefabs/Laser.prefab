@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36de54f9af36edf4c95fe98a072340c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserColors: {fileID: 11400000, guid: c0e41d1c36fe1e54aa0357325902e31a, type: 2}
+  laserColors: {fileID: 0}
   colorSelection: {fileID: 0}
   shoot: {fileID: 7624300401856120810}
   toggle: 0

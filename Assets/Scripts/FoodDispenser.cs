@@ -61,9 +61,11 @@ public class FoodDispenser : MonoBehaviour
         //Debug.Log((int)(foodData.data[indx0]));
         //Debug.Log(foodColors.foodColors[(int)(foodData.data[indx0])].name);
         Debug.Log("Expected: " + foodColors.foodColors[i].name+","+ foodShapes.foodShapes[j].name + "," + foodSpices.foodSpices[k].name);
-        conds += CheckCondition(colorSelection.indx, foodData.data[indx0]);
-        conds += CheckCondition(shapeSelection.indx, foodData.data[indx0+1]);
-        conds += CheckCondition(spiceSelection.indx, foodData.data[indx0+2]);
+        Debug.Log("Colors: " + colorSelection.indx.ToString() + "," + shapeSelection.indx.ToString() + "," + spiceSelection.indx.ToString());
+        conds += CheckCondition(colorSelection.indx, i);
+        conds += CheckCondition(shapeSelection.indx, j);
+        conds += CheckCondition(spiceSelection.indx, k);
+        Debug.Log("conds " + conds.ToString());
         return (conds == 3);
     }
 
@@ -129,11 +131,13 @@ public class FoodDispenser : MonoBehaviour
             
             if (CorrectFood((int)(5 * hive.GetAgrressivinesPercentage()), (int)(5 * hive.GetPopulationPercentage()), (int)(5 * timer.GetHungriness())))
             {
+                Debug.Log("correct food");
                 hive.DecreaseAggressiveness();
                 timer.Eat();
             }
             else
             {
+                Debug.Log("wrong food");
                 hive.IncreaseAggressiveness();
             }
             dispensePressed = false;

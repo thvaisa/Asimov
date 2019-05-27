@@ -20,33 +20,3 @@ public class FoodColorScriptable : ScriptableObject
 
 }
 
-[CreateAssetMenu(fileName = "Data", menuName = "FoodShapeScriptable", order = 1)]
-public class FoodShapeScriptable : ScriptableObject
-{
-    public List<FoodShape> foodShapes;
-
-    public List<string> GetNames()
-    {
-        List<string> names = new List<string>();
-        foreach (FoodShape shape in foodShapes)
-        {
-            names.Add(shape.name);
-        }
-        return names;
-    }
-}
-
-[CreateAssetMenu(fileName = "Data", menuName = "FoodSpiceScriptable", order = 1)]
-public class FoodSpiceScriptable : ScriptableObject
-{
-    public List<FoodSpice> foodSpices;
-    public List<string> GetNames()
-    {
-        List<string> names = new List<string>();
-        foreach (FoodSpice spice in foodSpices)
-        {
-            names.Add(spice.name);
-        }
-        return names;
-    }
-}

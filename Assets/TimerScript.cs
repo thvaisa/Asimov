@@ -13,8 +13,8 @@ public class TimerScript : MonoBehaviour
     private float start_time = 99999999999f;
 
 
-    public int maxfull = 100;
-    public int full;
+    public int maxHungriness = 100;
+    public int hungry;
 
     public float eatCountdown = 0.0f;
 
@@ -22,7 +22,7 @@ public class TimerScript : MonoBehaviour
     public int curLineIndex = 0;
 
     public HiveBehaviour hive;
-    public float MaxCountdown = 5.0f;
+    public float MaxCountdown = 0.01f;
 
     private float time;
 
@@ -54,7 +54,7 @@ public class TimerScript : MonoBehaviour
         PanelController panel = transform.GetComponent<PanelController>();
         panel.UpdateMe += UpdateMe;
 
-        full = maxfull;
+        hungry = 0;
         eatCountdown = 0.0f;
         this.panel = panel.panel;
 
@@ -65,32 +65,32 @@ public class TimerScript : MonoBehaviour
     public float GetHungriness()
     {
         //Debug.Log((maxfull - full) * 1.0f / (1.0f * maxfull));
-        //return (maxfull - full)*1.0f/(1.0f*maxfull);
-        return 1.0f;
+        return hungry/(1.0f*maxHungriness);
+       
     }
 
     public void Eat()
     {
-        full = full + 25;
+        hungry = hungry-25;
         FullLimits();
     }
 
     public void FullLimits()
     {
-        if (full > maxfull)
+        if (hungry > maxHungriness)
         {
-            full = maxfull;
+            hungry = maxHungriness;
         }
-        else if (full < 0.0f)
+        else if (hungry < 0.0f)
         {
-            full = 0;
+            hungry = 0;
         }
     }
 
 
     public void TimePasses(int popSize)
     {
-        full = full - popSize;
+        hungry = hungry + popSize;
         FullLimits();
     }
 
@@ -113,7 +113,7 @@ public class TimerScript : MonoBehaviour
             {
                 TimePasses(hive.GetPopulationSize());
                 eatCountdown = 0f;
-                hive.IncreaseAggressiveness();
+                if(hungry > 75) hive.IncreaseAggressiveness();
             }
             //if (full <= 10.0f)
            

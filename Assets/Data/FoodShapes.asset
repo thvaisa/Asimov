@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 3514b4dc348cd984391fd0452bda03bd, type: 3}
   m_Name: FoodShapes
   m_EditorClassIdentifier: Assembly-CSharp::FoodShapeScriptable
   foodShapes:
